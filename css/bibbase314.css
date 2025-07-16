@@ -1,0 +1,28 @@
+/* css for bibBase page */
+
+#bibbase_header a[onclick="groupby('type')"] { display: none; }
+
+#bibbase_header a[onclick="groupby('downloads')"] { display: none; }
+
+.bibbase_paper_title a{ pointer-events: none;  }
+
+.bibbase_paper_author a{ pointer-events: none; }
+
+/* .bibbase.link {
+  color #000000 !important; 
+  text-decoration: none;
+  font-weight: bold;
+} */
+
+
+/* .bibbase_paper_month { display: none; } */
+
+/* .bibbase_paper_title {color #000000 !important; } */
+
+/* .bibbase_paper { margin-left: 1em; margin-top: 3px; margin-bottom: 3px; } */
+/* .bibbase_paper_title { font-weight: bold; }
+.bibbase_paper_book { font-style: italic; } */
+
+/* .groupby_dropdown {
+    display: none;
+  } */
