@@ -256,6 +256,8 @@ def _text_to_html(s, cite=None, names=False):
         close = tag.split()[0]
         s = re.sub(r"\\" + cmd + r"\s*\{([^{}]*)\}",
                    r"<%s>\1</%s>" % (tag, close), s)
+    s = re.sub(r"\\url\{([^{}]*)\}", r'<a href="\1">\1</a>', s)
+    s = re.sub(r"\{\\(?:em|it|sl)\s*\{([^{}]*)\}\}", r"<i>\1</i>", s)
     s = re.sub(r"\{\\(?:em|it|sl)\s+([^{}]*)\}", r"<i>\1</i>", s)
     s = re.sub(r"\{\\bf\s+([^{}]*)\}", r"<b>\1</b>", s)
     # quotes, dashes, spaces
