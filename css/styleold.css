@@ -287,48 +287,47 @@ p 			{
 
 
 .hline	 	{	
-				background-image: url(images/hline.gif);
+				background-image: url(../images/hline.gif);
 				background-repeat: repeat-x;
 			}
 				
 
 .vline	 	{	
-				background-image: url(images/vline.gif);
+				background-image: url(../images/vline.gif);
 				background-repeat: repeat-y;
 			}
 				
 
 .hdash	 	{	
-				background-image: url(images/hdash.gif);
+				background-image: url(../images/hdash.gif);
 				background-repeat: repeat-x;
 			}
 				
 
 .vdash	 	{	
-				background-image: url(images/vdash.gif);
+				background-image: url(../images/vdash.gif);
 				background-repeat: repeat-y;
 			}					
 
 .btm_grad	{	
-				background-image: url(images/btm_grad.jpg);
+				background-image: url(../images/btm_grad.jpg);
 				background-repeat: repeat-x;
 				background-color: #f8f4e8;
 			}
 			
 .excellent_bg	{	
-				background-image: url(images/excellent_bg.jpg);
 				background-repeat: repeat-x;
 				background-color: #f8f4e8;
 			}		
 			
 .n_grad		{	
-				background-image: url(images/n_grad.jpg);
+				background-image: url(../images/n_grad.jpg);
 				background-repeat: repeat-x;
 				background-color: #fff9e8;
 			}				
 				
 .yellowgrad	{	
-				background-image: url(images/yellow_grad.jpg);
+				background-image: url(../images/yellow_grad.jpg);
 				background-repeat: repeat-x;
 				background-color: #ffd683;
 			}				

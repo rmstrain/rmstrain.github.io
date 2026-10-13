@@ -353,3 +353,70 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   } */
 
 
+
+
+/* ==========================================================================
+   Additions, October 2026
+   ========================================================================== */
+
+/* Navbar: pinned to the top edge at every window width, on every page.
+   (Before, the fixed bar started about 20px from the left edge, so its last
+   item, "Teaching", was pushed off-screen as the window got narrower.) */
+.site-nav { left: 0; right: 0; width: auto; }
+.site-nav .w3-bar { display: block; width: 100%; white-space: nowrap; }
+.site-nav .w3-bar-item { padding: 12px 24px; }
+/* Solid instead of 60% transparent, so page text no longer shows through
+   the bar while scrolling; colours match how the bar looked before. */
+.site-nav .w3-bar.w3-opacity { opacity: 1; background-color: #2f3033 !important; }
+.site-nav a.light-nav-link:link, .site-nav a.light-nav-link:visited { color: #d4d5d7 !important; }
+.site-nav a.light-nav-link:hover { color: #000 !important; }
+.site-nav .w3-white { background-color: #bdbec0 !important; }
+.site-nav a.dark-nav-link:link, .site-nav a.dark-nav-link:visited { color: #2a2b2e !important; }
+body { padding-top: 51px; }              /* room for the fixed navbar */
+html { scroll-padding-top: 60px; }       /* in-page links land below it */
+
+@media (max-width: 600px) {
+  .site-nav .w3-bar { font-size: 16px !important; }
+  .site-nav .w3-bar-item { padding: 10px 12px; }
+  body { padding-top: 44px; }
+  html { scroll-padding-top: 52px; }
+}
+@media (max-width: 340px) {
+  .site-nav .w3-bar-item { padding: 10px 7px; }
+}
+
+/* Footer lists (replaces the inline list-style attributes) */
+.footer-list { list-style: none; padding-left: 1.5em; margin-top: 0; }
+.footer-logo { margin-top: 32px; }
+.footer-quote { margin-top: 40px; font-family: 'Gentium Basic', serif; }
+
+/* Canvas link styled as the old button */
+a.canvas-btn, a.canvas-btn:link, a.canvas-btn:visited { color: #fff !important; text-decoration: none; }
+
+/* Publication list (built from RMS3web.bib by build_pubs.py) */
+.publications { padding-bottom: 16px; }
+.pub-count { margin: 16px 0 4px; color: #44464b; }
+.pub-count select { font: inherit; padding: 2px 4px; margin-left: 4px; }
+.pub-group { margin: 0 0 4px; }
+.pub-group > summary {
+  cursor: pointer; font-size: 20px; font-weight: 600;
+  padding: 10px 0 4px; border-bottom: 1px solid #bbbdc0;
+}
+.pub-items { list-style: none; margin: 0; padding: 0; }
+.pub { padding: 10px 0; border-bottom: 1px solid #e0e1e3; line-height: 1.55; overflow-wrap: anywhere; }
+.pub:last-child { border-bottom: 0; }
+.pub-title { font-weight: 600; }
+.pub-venue { color: #44464b; }
+.pub-venue .journal { font-style: italic; }
+.pub-links { margin-left: 0.3em; font-size: 13px; }
+.pub-link { margin-right: 0.7em; white-space: nowrap; }
+.pub-extras { display: flex; flex-wrap: wrap; column-gap: 1.2em; font-size: 13px; }
+.pub-more[open] { flex-basis: 100%; }
+.pub-more > summary { cursor: pointer; color: #01256e; }
+.pub-abstract { background: #fff; padding: 8px 12px; margin: 4px 0 8px; font-size: 14px; line-height: 1.6; }
+.pub-abstract p { margin: 0 0 8px; }
+.pub-abstract p:last-child { margin-bottom: 0; }
+.pub-bibtex {
+  background: #fff; padding: 8px 12px; margin: 4px 0 8px;
+  font-size: 12px; line-height: 1.45; white-space: pre-wrap; overflow-x: auto;
+}

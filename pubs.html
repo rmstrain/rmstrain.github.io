@@ -1,496 +1,941 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<title>Robert M. Strain</title>
-
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- w3.css is the main style sheet for this webpage -->
-<!--
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-//-->
+<title>Robert M. Strain: Research</title>
+<meta name="description" content="Publications of Robert M. Strain, with abstracts and links to arXiv preprints, PDFs and journals.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="mystyle.css">
-<!-- <link rel="stylesheet" href="css/bibbase314.css"> -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,400i&display=swap" rel="stylesheet">
-<!-- Font-awesome loads the navbar on small screens and other things -->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css">  -->
-<!-- <link rel="stylesheet" href="css/academicons.min.css"/> -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <link rel="stylesheet" href="css/academicons.min.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,400i&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/academicons.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif;}
 .w3-bar,button {font-family: 'Gentium Basic', serif;}
-.fa-anchor,.fa-coffee {font-size:200px}
 </style>
-
-<!-- Used to toggle the menu on small screens when clicking on the menu button -->
-<!-- <script>
-function menuFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script> -->
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143822198-1"></script>
+<!-- MathJax typesets the mathematics in titles and abstracts -->
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'UA-143822198-1');
+window.MathJax = {
+  tex: { inlineMath: [["$", "$"], ["\\(", "\\)"]], processEscapes: true },
+  options: { skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"] }
+};
 </script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
 
+<body class="w3-theme-d3" id="home">
 
-
-
-
-
-<!-- Default Statcounter code for My Penn Web Page
-https://strain.math.upenn.edu/
-sc_invisible=1; makes counter invisible
-sc_invisible=0; makes counter visible -->
-<script type="text/javascript">
-var sc_project=878895;
-var sc_invisible=1;
-var sc_security="36852f48";
-var scJsHost = "https://";
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="https://c.statcounter.com/878895/0/36852f48/0/"
-alt="Web Analytics"></a></div></noscript>
-<!-- End of Statcounter Code -->
-
-
-
-
-
-<body class="w3-theme-d3">
-
-  <!-- Navbar -->
-  <div class="w3-top w3-hide-small">
-    <div class="w3-bar w3-theme-d5 w3-opacity w3-card w3-left-align w3-large">
-      <!-- <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-padding-large w3-theme-action w3-large w3-theme-d5 light-nav-link" href="javascript:void(0);" onclick="menuFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> -->
-      <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-white light-nav-link"><i class="fa fa-arrow-up"></i></a>
-      <!-- Float links to the right. Hide them on small screens -->
-      <div class="w3-right">
-        <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white light-nav-link">Home</a>
-      <a href="pubs.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white dark-nav-link">Publications</a>
-      <a href="teaching.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white light-nav-link">Teaching</a>
+<!-- Navbar: the same on every page, fixed to the top at every screen width -->
+<div class="w3-top site-nav">
+  <div class="w3-bar w3-theme-d5 w3-opacity w3-card w3-large">
+    <a href="#home" class="w3-bar-item w3-button w3-hover-white light-nav-link" title="Back to top"><i class="fa fa-arrow-up"></i></a>
+    <div class="w3-right">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-white light-nav-link">Home</a>
+      <a href="pubs.html" class="w3-bar-item w3-button w3-white dark-nav-link">Publications</a>
+      <a href="teaching.html" class="w3-bar-item w3-button w3-hover-white light-nav-link">Teaching</a>
     </div>
-    </div>
-
-    <!-- Navbar on small screens -->
-    <!-- <div id="navDemo" class="w3-bar-block w3-theme-d4 w3-hide w3-hide-large w3-hide-medium w3-large light-nav-link">
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large light-nav-link">Home</a>
-      <a href="pubs.html" class="w3-bar-item w3-button w3-padding-large light-nav-link">Publications</a>
-      <a href="teaching.html" class="w3-bar-item w3-button w3-padding-large light-nav-link">Teaching</a>
-    </div> -->
   </div>
-
-
-
-
+</div>
 
 <!-- Header -->
-<br>
-<header class="w3-container w3-center w3-padding-32"  id="home">
-  <h1 class="w3-margin w3-xxxlarge w3-hide-small">Robert M. Strain</h1>
-  <h1 class="w3-margin w3-xxxlarge w3-hide-medium w3-hide-large"><a class="light-link" href="index.html">Robert M. Strain</a></h1>
+<header class="w3-container w3-center w3-padding-32">
+  <h1 class="w3-margin w3-xxxlarge">Robert M. Strain</h1>
   <hr>
   <h1>Research</h1>
 </header>
 
-
-
-
-
-<!-- w3-content defines a container for fixed size centered content,
-and is wrapped around the whole page content, except for the footer -->
 <div class="w3-content w3-margin-top" style="max-width:1400px">
-
-<!-- Grid -->
-<!-- <div class="w3-content"> -->
   <div class="w3-row-padding">
 
-
-
-
-
-
-  <!-- entry -->
-  <div class="w3-container w3-theme-d3 w3-margin-bottom">
-          <!-- <div class="w3-container w3-padding w3-theme-d1">
-            <h3 align="center">Digital Research Identifiers</h3>
-          </div> -->
-
+    <!-- Research identifiers -->
+    <div class="w3-container w3-theme-d3 w3-margin-bottom">
       <ul class="w3-ul">
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="light-link" href="http://arxiv.org/a/0000-0002-1107-8570"><i class="ai ai-arxiv ai-fw w3-margin-right"></i>Preprints on arXiv</a> (contains my most recent papers)</span>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="light-link" href="http://www.ams.org/mathscinet/search/publications.html?pg1=IID&s1=746810" ><i class="fa fa-external-link fa-fw w3-margin-right"></i>Publications on MathSciNet: MR Author ID 746810</a> (subscription required)</span>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="light-link" href="https://zbmath.org/authors/?q=ai:strain.robert-m" ><i class="fa fa-external-link fa-fw w3-margin-right"></i>Publications on Zentralblatt: Zbl Author ID strain.robert-m</a> (subscription required for full access)</span>
-            </li>
-            <li class="w3-padding-16">
-              <span class="w3-large"><a class="light-link" href="https://scholar.google.com/citations?hl=en&user=yEffwdEAAAAJ"><i class="ai ai-google-scholar ai-fw w3-margin-right"></i>Google scholar profile</a></span><br>
-            </li>
-            <!-- <li class="w3-padding-16">
-              <span class="w3-large"></span><br>
-              <span><div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-1107-8570" href="https://orcid.org/0000-0002-1107-8570" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">ORCID iD <i class="ai ai-orcid ai-fw w3-margin-right"></i></a></div></span>
-            </li> -->
-            <li class="w3-padding-16">
+        <li class="w3-padding-16"><span class="w3-large"><a class="light-link" href="http://arxiv.org/a/0000-0002-1107-8570"><i class="ai ai-arxiv ai-fw w3-margin-right"></i>Preprints on arXiv</a> (contains my most recent papers)</span></li>
+        <li class="w3-padding-16"><span class="w3-large"><a class="light-link" href="http://www.ams.org/mathscinet/search/publications.html?pg1=IID&amp;s1=746810"><i class="fa fa-book fa-fw w3-margin-right"></i>Publications on MathSciNet: MR Author ID 746810</a> (subscription required)</span></li>
+        <li class="w3-padding-16"><span class="w3-large"><a class="light-link" href="https://zbmath.org/authors/?q=ai:strain.robert-m"><i class="fa fa-database fa-fw w3-margin-right"></i>Publications on Zentralblatt: Zbl Author ID strain.robert-m</a> (subscription required for full access)</span></li>
+        <li class="w3-padding-16"><span class="w3-large"><a class="light-link" href="https://scholar.google.com/citations?hl=en&amp;user=yEffwdEAAAAJ"><i class="ai ai-google-scholar ai-fw w3-margin-right"></i>Google scholar profile</a></span></li>
+        <li class="w3-padding-16"><a class="light-link" href="https://orcid.org/0000-0002-1107-8570"><i class="ai ai-orcid ai-fw w3-margin-right"></i>ORCID iD (0000-0002-1107-8570)</a></li>
+        <li class="w3-padding-16"><a class="light-link" href="#footer"><i class="fa fa-arrow-down fa-fw w3-margin-right"></i>Contact Information</a></li>
+      </ul>
+    </div>
 
-              <span><a content="https://orcid.org/0000-0002-1107-8570" class="light-link" href="https://orcid.org/0000-0002-1107-8570"><i class="ai ai-orcid ai-fw w3-margin-right"></i>ORCID iD (0000-0002-1107-8570)</a></span>
-            </li>
-
-            <!-- <li class="w3-padding-16"><span id="badgeCont711"><script type="text/javascript" src="https://publons.com/mashlets?el=badgeCont711&rid=U-2382-2019"></script></span></li> -->
-
-            <li class="w3-padding-16">
-              <span><a class="light-link" href="#footer"><i class="fa fa-arrow-down fa-fw w3-margin-right">&nbsp;</i>Contact Information</a></span>
-            </li>
-        </ul>
-  </div>
-
-
-<!--  buttons and links entry FOR PUBLICATION LISTS HIDE SMALL -->
-<!-- <div class="w3-container w3-hide-small w3-margin-bottom" align="center">
-
-    <div class="w3-col m3">
-        <a href="cvSTRAIN.pdf"><button class="w3-button w3-padding-large w3-theme-l5 w3-border"><b><i class="fa fa-file-pdf-o fa-fw">&nbsp;</i>Curriculum Vitae</b></button></a>
-        </div>
-
-        <div class="w3-col m3">
-        <a href="cvSTRAINshort.pdf"><button class="w3-button w3-padding-large w3-theme-l5 w3-border"><b><i class="fa fa-file-pdf-o fa-fw">&nbsp;</i>Short CV</b></button></a>
-        </div>
-
-        <div class="w3-col m3">
-        <a href="bibSTRAIN.pdf"><button class="w3-button w3-padding-large w3-theme-l5 w3-border"><b><i class="fa fa-file-pdf-o fa-fw">&nbsp;</i>Bibliography</b></button></a>
+    <div class="w3-container w3-card w3-theme-l5 w3-margin-bottom">
+      <div class="w3-container">
+        <p>Below is a list of my publications. The list can be grouped by year or by keyword, and it contains abstracts, links to arXiv or alternatively to local PDF preprints, and <i class="ai ai-doi ai-fw"></i> links to the journals. Alternatively <a class="dark-link" href="#pdfDOCS">the Vita and Bibliography files linked below</a> contain the URLs to my research papers as well.</p>
       </div>
-
-      <div class="w3-col m3">
-      <a href="bibSTRAIN.pdf"><button class="w3-button w3-padding-large w3-theme-l5 w3-border"><b><i class="fa fa-file-pdf-o fa-fw">&nbsp;</i>Bibliography (with abstracts)</b></button></a>
     </div>
 
-        <div class="w3-col m3">
-        <a href="#footer"><button class="w3-button w3-padding-large w3-theme-l5 w3-border"><b><i class="fa fa-arrow-down">&nbsp;</i>Contact Information</b></button></a>
-          </div>
-
-  </div> -->
-
-
-
-
-
-  <!--  entry -->
-<div class="w3-container w3-card w3-theme-l5 w3-margin-bottom">
-    <div class="w3-container">
-    <p>Below is a list of my publications generated by BibBase.org, it may take a moment to load... it is worth the wait.  The list can be grouped by year, by author, or by keywords, and the list contains abstracts, links to ArXiv or alternatively to local PDF preprints, and <i class="ai ai-doi ai-fw">&nbsp;</i> links to the journals.       Alternatively <a class="dark-link" href="#pdfDOCS">the Vita and Bibliography files linked below</a> contain the URLS to my research papers as well.</p>
-    </div>
-  </div>
-
-
-
-
-    <!-- entry BIBBASE PUBLICAITON LIST -->
-  <div class="w3-card w3-margin-bottom w3-theme-l5 ">
-    <div class="w3-container w3-theme-l5">
-      <script src="https://bibbase.org/show?bib=https%3A%2F%2Frmstrain.github.io%2FRMS3web.bib&theme=simple&authorFirst=1&fullnames=1&jsonp=1"></script>
-      <p>&nbsp;</p>
-      <br>
-    </div>
-    </div>
-
-
-<!-- entry PDF files  -->
-<div class="w3-container w3-theme-d3 w3-margin-bottom" id="pdfDOCS">
-    <ul class="w3-ul">
-
-      <li class="w3-padding-16">
-          <span class="w3-large"><a class="light-link" href="cvSTRAIN.pdf">
-            <i class="fa fa-file-pdf-o fa-fw w3-margin-right">&nbsp;</i>Curriculum Vitae</a></span>
-        </li>
-
-        <li class="w3-padding-16">
-            <span class="w3-large"><a class="light-link" href="cvSTRAINshort.pdf">
-              <i class="fa fa-file-pdf-o fa-fw w3-margin-right">&nbsp;</i>Short Vitae</a></span>
-        </li>
-
-        <li class="w3-padding-16">
-            <span class="w3-large"><a class="light-link" href="bibSTRAIN.pdf">
-              <i class="fa fa-file-pdf-o fa-fw w3-margin-right">&nbsp;</i>Bibliography</a></span>
-          </li>
-
-          <li class="w3-padding-16">
-              <span class="w3-large"><a class="light-link" href="bibSTRAINabs.pdf" >
-                <i class="fa fa-file-pdf-o fa-fw w3-margin-right">&nbsp;</i>Bibliography (with abstracts)</a></span>
-            </li>
-
-</ul>
+    <!-- Publication list: generated from RMS3web.bib by build_pubs.py -->
+    <div class="w3-card w3-margin-bottom w3-theme-l5">
+      <div class="w3-container w3-theme-l5 publications">
+<!-- PUBLICATIONS:BEGIN -->
+<p class="pub-count">56 publications. Group by: <select id="pub-group" aria-label="Group publications by"><option value="year">year</option><option value="keyword">keyword</option></select></p>
+<div id="pub-list">
+<details class="pub-group" open><summary>2026</summary><ul class="pub-items">
+<li class="pub" id="pub-GancedoGarciaJuarezHaziotPatelStrain2026" data-year="2026" data-keywords="Fluid mechanics|Free boundary problems|Muskat problem|critical regularity"><span class="pub-authors">Francisco Gancedo, Eduardo García-Juárez, Susanna V. Haziot, Neel Patel, and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://arxiv.org/abs/2609.30197">Nonlinear Stability of 3D Muskat Bubbles</a>. <span class="pub-venue">Preprint (2026), 52 pages.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/2609.30197" title="arXiv:2609.30197">arXiv</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>This paper studies the three-dimensional Muskat problem for two immiscible fluids in a porous medium subject to gravity and surface tension. We consider the setting in which one fluid forms a bounded bubble surrounded by the other. For any value of the physical parameters, we prove the global-in-time nonlinear asymptotic stability of a translating spherical bubble for small initial perturbations in the critical Lipschitz class. This enlarges the class of critical spaces considered in previous two-dimensional bubble results. The proof combines spectral analysis of the linearized operator on $\mathbb{S}^2$ with multilinear singular integral estimates that exploit a crucial null structure in the nonlinear terms.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{GancedoGarciaJuarezHaziotPatelStrain2026,
+  author    = {Francisco Gancedo and Eduardo Garc{\&#x27;\i}a-Ju{\&#x27;a}rez and Susanna V. Haziot and Neel Patel and Robert M. Strain},
+  title     = {{Nonlinear Stability of 3D Muskat Bubbles}},
+  pages     = {52 pages},
+  year      = {2026},
+  note      = {preprint},
+  eprint    = {2609.30197}
+}</pre></details></div></li>
+<li class="pub" id="pub-StrainTaylorRuiz2026" data-year="2026" data-keywords="relativistic Boltzmann equation|Kinetic Theory|relativistic Kinetic Theory"><span class="pub-authors"><span class="me">Robert M. Strain</span>, Martin Taylor, and Renato Velozo Ruiz.</span> <a class="pub-title" href="https://arxiv.org/abs/2606.00175">Future global stability of Maxwell-Jüttner equilibria and vacuum for the massless Boltzmann equation on FLRW spacetimes</a>. <span class="pub-venue">Preprint (2026), 71 pages.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/2606.00175" title="arXiv:2606.00175">arXiv</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In this work we study the general relativistic massless Boltzmann equation on Friedmann–Lemaître–Robertson–Walker spacetimes with spatial topology \(\mathbb{T}^3\) in the linear and decelerated expanding regimes, where the scale factor is \(t^{\mathfrak{q}}\) with \(\mathfrak{q}\in [0,1]\). The massless Boltzmann equation on these backgrounds admits non-stationary Maxwell–Jüttner equilibria of the form $\exp(- |t^{2\mathfrak{q}}p|)$. For $0 \leq \mathfrak{q} \leq 1$, we prove future global-in-time existence and uniqueness of small perturbations of these equilibria in the case of hard ball interaction without symmetry assumptions. For $0\leq \mathfrak{q} &lt; 1/3$, we prove that the perturbation — measured in a suitable \(L^2_p\) based energy norm — decays at the superpolynomial time-decay rate of $t^{-3\mathfrak{q}}\exp(-t^{1-3\mathfrak{q}})$, whereas for $1/3&lt; \mathfrak{q} \leq 1$ we obtain the polynomial time-decay rate of $t^{-3\mathfrak{q}}$. In the borderline case \(\mathfrak{q}=1/3\), we show the time-decay of \(t^{-3\mathfrak{q} -c}\) with a uniform constant \(c&gt;0\). Finally, for \(\frac{1}{3}&lt; \mathfrak{q}\leq 1\), we prove future global-in-time existence and uniqueness of small perturbations of the vacuum solution on \(\mathbb{T}^3\).</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{StrainTaylorRuiz2026,
+  author    = {Robert M. Strain and Martin Taylor and Renato Velozo Ruiz},
+  title     = {{Future global stability of Maxwell-J{\&quot;u}ttner equilibria and vacuum for the massless Boltzmann equation on FLRW spacetimes}},
+  pages     = {71 pages},
+  year      = {2026},
+  note      = {preprint},
+  eprint    = {2606.00175}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2025</summary><ul class="pub-items">
+<li class="pub" id="pub-2409-00311" data-year="2025" data-keywords="Boltzmann equation|Landau equation|Kinetic Theory|non-cutoff"><span class="pub-authors">Renjun Duan, Shuangqian Liu, <span class="me">Robert M. Strain</span>, and Anita Yang.</span> <a class="pub-title" href="https://arxiv.org/abs/2409.00311">The 3D kinetic Couette flow via the Boltzmann equation in the diffusive limit</a>. <span class="pub-venue">Preprint (2025), 67 pages.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/2409.00311" title="arXiv:2409.00311">arXiv</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In the paper we study the Boltzmann equation in the diffusive limit in a channel domain $\mathbb{T}^2\times (-1,1)$ for the 3D kinetic Couette flow. Our results demonstrate that the first-order approximation of the solutions is governed by the perturbed incompressible Navier–Stokes–Fourier system around the fluid Couette flow. Moreover, in the absence of external forces, the 3D kinetic Couette flow asymptotically converges over time to the 1D steady planar kinetic Couette flow. Our proof relies on (i) the Fourier transform on $\mathbb{T}^2$ to essentially reduce the 3D problem to a one-dimensional one, (ii) anisotropic Chemin–Lerner type function spaces, incorporating the Wiener algebra, to control nonlinear terms and address the singularity associated with a small Knudsen number in the diffusive limit, and (iii) Caflisch’s decomposition, combined with the $L^2\cap L^\infty$ interplay technique, to manage the growth of large velocities.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{2409.00311,
+  author    = {Duan, Renjun and Liu, Shuangqian and Strain, Robert M. and Yang, Anita},
+  title     = {{The 3D kinetic Couette flow via the Boltzmann equation in the diffusive limit}},
+  pages     = {67 pages},
+  year      = {2025},
+  note      = {preprint},
+  eprint    = {2409.00311}
+}</pre></details></div></li>
+<li class="pub" id="pub-GancedoGarciaJuarezPatelStrain24" data-year="2025" data-keywords="Fluid mechanics|Free boundary problems|Muskat problem|Fluid interface|Global existence|Critical regularity|Bubble|Equilibria"><span class="pub-authors">Francisco Gancedo, Eduardo García-Juárez, Neel Patel, and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1016/j.matpur.2025.103664">On Nonlinear Stability of Muskat Bubbles</a>. <span class="pub-venue"><span class="journal">J. Math. Pures Appl. (9)</span> <span class="vol">194</span> (2025), 31 pages.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/2312.14323" title="arXiv:2312.14323">arXiv</a> <a class="pub-link" href="https://doi.org/10.1016/j.matpur.2025.103664" title="doi:10.1016/j.matpur.2025.103664">DOI</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In this paper we consider gravity-capillarity Muskat bubbles in 2D. We obtain a new approach to improve our result in [<a href="#pub-GancedoGarciaJuarezPatelStrain23">Gancedo–García-Juárez–Patel–Strain, 2023</a>]. Due to a new bubble-adapted formulation, the improvement is two fold. We significantly condense the proof and we now obtain the global well-posedness result for Muskat bubbles in critical regularity.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{GancedoGarciaJuarezPatelStrain24,
+  author    = {Gancedo, Francisco and Garc\&#x27;{\i}a-Ju\&#x27;{a}rez, Eduardo and Patel, Neel and Strain, Robert},
+  title     = {{On Nonlinear Stability of Muskat Bubbles}},
+  journal   = {J. Math. Pures Appl. (9)},
+  volume    = {194},
+  pages     = {31 pages},
+  year      = {2025},
+  doi       = {10.1016/j.matpur.2025.103664},
+  eprint    = {2312.14323}
+}</pre></details></div></li>
+<li class="pub" id="pub-Peskin3D" data-year="2025" data-keywords="Fluid mechanics|Free boundary problems|Peskin problem|Fluid-Structure interface|critical regularity|immersed boundary problem"><span class="pub-authors">Eduardo García-Juárez, Po-Chun Kuo, Yoichiro Mori, and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1142/S0218202525500046">Well-Posedness of the 3D Peskin Problem</a>. <span class="pub-venue"><span class="journal">Math. Models Methods Appl. Sci.</span> <span class="vol">35</span> (2025), no. 01, 113–216.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/2301.12153" title="arXiv:2301.12153">arXiv</a> <a class="pub-link" href="https://doi.org/10.1142/S0218202525500046" title="doi:10.1142/S0218202525500046">DOI</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>This paper introduces the \em3D Peskin problem: a two-dimensional elastic membrane immersed in a three-dimensional steady Stokes flow. We obtain the equations that model this free boundary problem and show that they admit a boundary integral reduction, providing an evolution equation for the elastic interface. We consider general nonlinear elastic laws, i.e., the fully nonlinear Peskin problem, and prove that the problem is well-posed in low-regularity Hölder spaces. Moreover, we prove that the elastic membrane becomes smooth instantly in time.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{Peskin3D,
+  author    = {Eduardo Garc{\&#x27;{i}}a-Ju{\&#x27;{a}}rez and Po-Chun Kuo and Yoichiro Mori and Robert M. Strain},
+  title     = {{Well-Posedness of the 3D Peskin Problem}},
+  journal   = {Math. Models Methods Appl. Sci.},
+  volume    = {35},
+  number    = {01},
+  pages     = {113--216},
+  year      = {2025},
+  doi       = {10.1142/S0218202525500046},
+  eprint    = {2301.12153}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2024</summary><ul class="pub-items">
+<li class="pub" id="pub-2112-00692" data-year="2024" data-keywords="Fluid mechanics|Free boundary problems|Peskin problem|Fluid-Structure interface|critical regularity|immersed boundary problem"><span class="pub-authors">Stephen Cameron and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1002/cpa.22139">Critical local well-posedness for the fully nonlinear Peskin problem</a>. <span class="pub-venue"><span class="journal">Comm. Pure Appl. Math.</span> <span class="vol">77</span> (2024), no. 2, 901–989.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/2112.00692" title="arXiv:2112.00692">arXiv</a> <a class="pub-link" href="https://doi.org/10.1002/cpa.22139" title="doi:10.1002/cpa.22139">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=4673875" title="MR4673875 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>We study the problem where a one-dimensional elastic string is immersed in a two-dimensional steady Stokes fluid. This is known as the Stokes immersed boundary problem and also as the Peskin problem. We consider the case with equal viscosities and with a fully non-linear tension law; this model has been called the fully nonlinear Peskin problem. In this case we prove local in time well-posedness for arbitrary initial data in the scaling critical Besov space $\dot{B}^{3/2}_{2,1}(\mathbb{T} ; \mathbb{R}^2)$. We additionally prove the optimal higher order smoothing effects for the solution. To prove this result we derive a new formulation of the boundary integral equation that describes the parametrization of the string, and we crucially utilize a new cancellation structure.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{2112.00692,
+  author    = {Cameron, Stephen and Strain, Robert M.},
+  title     = {Critical local well-posedness for the fully nonlinear {P}eskin problem},
+  journal   = {Comm. Pure Appl. Math.},
+  volume    = {77},
+  number    = {2},
+  pages     = {901--989},
+  year      = {2024},
+  doi       = {10.1002/cpa.22139},
+  eprint    = {2112.00692},
+  issn      = {0010-3640,1097-0312},
+  mrnumber  = {4673875}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2023</summary><ul class="pub-items">
+<li class="pub" id="pub-GancedoGarciaJuarezPatelStrain23" data-year="2023" data-keywords="Fluid mechanics|Free boundary problems|Muskat problem"><span class="pub-authors">Francisco Gancedo, Eduardo García-Juárez, Neel Patel, and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1090/memo/1455">Global Regularity for Gravity Unstable Muskat Bubbles</a>. <span class="pub-venue"><span class="journal">Mem. Amer. Math. Soc.</span> <span class="vol">292</span> (2023), no. 1455, 87 pages.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/1902.02318" title="arXiv:1902.02318">arXiv</a> <a class="pub-link" href="https://doi.org/10.1090/memo/1455" title="doi:10.1090/memo/1455">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=4679708" title="MR4679708 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In this paper, we study the dynamics of fluids in porous media governed by Darcy’s law: the Muskat problem. We consider the setting of two immiscible fluids of different densities and viscosities under the influence of gravity in which one fluid is completely surrounded by the other. This setting is gravity unstable because along a portion of the interface, the denser fluid must be above the other. Surprisingly, even without capillarity, the circle-shaped bubble is a steady state solution moving with vertical constant velocity determined by the density jump between the fluids. Taking advantage of our discovery of this steady state, we are able to prove global in time existence and uniqueness of dynamic bubbles of nearly circular shapes under the influence of surface tension. We prove this global existence result for low regularity initial data. Moreover, we prove that these solutions are instantly analytic and decay exponentially fast in time to the circle.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{GancedoGarciaJuarezPatelStrain23,
+  author    = {Gancedo, Francisco and Garc\&#x27;{\i}a-Ju\&#x27;{a}rez, Eduardo and Patel, Neel and Strain, Robert},
+  title     = {Global {R}egularity for {G}ravity {U}nstable {M}uskat {B}ubbles},
+  journal   = {Mem. Amer. Math. Soc.},
+  volume    = {292},
+  number    = {1455},
+  pages     = {87 pages},
+  year      = {2023},
+  doi       = {10.1090/memo/1455},
+  eprint    = {1902.02318},
+  issn      = {0065-9266,1947-6221},
+  mrnumber  = {4679708}
+}</pre></details></div></li>
+<li class="pub" id="pub-2009-03360" data-year="2023" data-keywords="Fluid mechanics|Free boundary problems|Peskin problem|Fluid-Structure interface|critical regularity|immersed boundary problem"><span class="pub-authors">Eduardo García-Juárez, Yoichiro Mori, and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.2140/apde.2023.16.785">The Peskin Problem with Viscosity Contrast</a>. <span class="pub-venue"><span class="journal">Anal. PDE</span> <span class="vol">16</span> (2023), no. 3, 785–838.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/2009.03360" title="arXiv:2009.03360">arXiv</a> <a class="pub-link" href="https://doi.org/10.2140/apde.2023.16.785" title="doi:10.2140/apde.2023.16.785">DOI</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>The Peskin problem models the dynamics of a closed elastic filament immersed in an incompressible fluid. In this paper, we consider the case when the inner and outer viscosities are possibly different. This viscosity contrast adds further non-local effects to the system through the implicit non-local relation between the net force and the free interface. We prove the first global well-posedness result for the Peskin problem in this setting. The result applies for medium size initial interfaces in critical spaces and shows instant analytic smoothing. We carefully calculate the medium size constraint on the initial data. These results are new even without viscosity contrast.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{2009.03360,
+  author    = {Eduardo Garc{\&#x27;{i}}a-Ju{\&#x27;{a}}rez and Yoichiro Mori and Robert M. Strain},
+  title     = {{The Peskin Problem with Viscosity Contrast}},
+  journal   = {Anal. PDE},
+  volume    = {16},
+  number    = {3},
+  pages     = {785--838},
+  year      = {2023},
+  doi       = {10.2140/apde.2023.16.785},
+  eprint    = {2009.03360}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2022</summary><ul class="pub-items">
+<li class="pub" id="pub-2103-15885" data-year="2022" data-keywords="relativistic Boltzmann equation|Kinetic Theory|relativistic Kinetic Theory"><span class="pub-authors">Jin Woo Jang and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1007/s40818-022-00137-2">Asymptotic Stability of the Relativistic Boltzmann Equation without Angular Cut-off</a>. <span class="pub-venue"><span class="journal">Ann. PDE</span> <span class="vol">8</span> (2022), no. 2, 167 pages.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/2103.15885" title="arXiv:2103.15885">arXiv</a> <a class="pub-link" href="https://doi.org/10.1007/s40818-022-00137-2" title="doi:10.1007/s40818-022-00137-2">DOI</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>This paper is concerned with the relativistic Boltzmann equation without angular cutoff. We establish the global-in-time existence, uniqueness and asymptotic stability for solutions nearby the relativistic Maxwellian to the special relativistic Boltzmann equation without any angular cutoff. We work in the case of a spatially periodic box. We assume the generic hard-interaction and soft-interaction conditions on the collision kernel that were derived by Dudyński and Ekiel-Je$\dot{\text{z}}$ewska (Comm. Math. Phys. <b>115</b>(4):607–629, 1988), and our assumptions include the case of Israel particles (J. Math. Phys. <b>4</b>:1163–1181, 1963). In this physical situation, the angular function in the collision kernel is not locally integrable, and the collision operator behaves like a fractional diffusion operator. We further derive the relativistic analogue of the Carleman dual representation of Boltzmann collision operator. This is the first global existence and stability result for relativistic Boltzmann equation without angular cutoff and this resolves the open question of perturbative global existence without the Grad’s angular cut-off assumption.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{2103.15885,
+  author    = {{J}in {W}oo {J}ang and {R}obert {M}. {S}train},
+  title     = {{Asymptotic Stability of the Relativistic Boltzmann Equation without Angular Cut-off}},
+  journal   = {Ann. {PDE}},
+  volume    = {8},
+  number    = {2},
+  pages     = {167 pages},
+  year      = {2022},
+  doi       = {10.1007/s40818-022-00137-2},
+  eprint    = {2103.15885}
+}</pre></details></div></li>
+<li class="pub" id="pub-JangStrainWong2021" data-year="2022" data-keywords="Kinetic Theory|relativistic Kinetic Theory|Vlasov-Maxwell systems"><span class="pub-authors">Jin Woo Jang, <span class="me">Robert M. Strain</span>, and Tak Kwong Wong.</span> <a class="pub-title" href="https://doi.org/10.3934/krm.2021039">Magnetic confinement for the 2D axisymmetric relativistic Vlasov–Maxwell system in an annulus</a>. <span class="pub-venue"><span class="journal">Kinet. Relat. Models</span> <span class="vol">15</span> (2022), no. 4, 569–604.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/2111.04583" title="arXiv:2111.04583">arXiv</a> <a class="pub-link" href="https://doi.org/10.3934/krm.2021039" title="doi:10.3934/krm.2021039">DOI</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>Although the nuclear fusion process has received a great deal of attention in recent years, the amount of the mathematical analysis that supports the stability of the system seems to be relatively insufficient. This paper deals with the mathematical analysis of the magnetic confinement of the plasma via kinetic equations. We prove the global wellposedness of the <i>Vlasov–Maxwell</i> system in a two-dimensional annulus when a huge (<i>but finite-in-time</i>) external magnetic potential is imposed near the boundary. We assume that the solution is axisymmetric. This work is the first step to a more generalized work on the three dimensional Tokamak structure. The highlight of this work is from the physical assumptions on the external magnetic potential well which remains finite <i>within a finite time interval</i> and from that we prove that the plasma never touches the boundary. In addition, we provide a sufficient condition on the magnitude of the external magnetic potential to guarantee that the plasma is confined in an annulus of the desired thickness which is slightly larger than the initial support. Our method uses the cylindrical-coordinate-forms of the <i>Vlasov–Maxwell</i> system.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{JangStrainWong2021,
+  author    = {{J}in {W}oo {J}ang and {R}obert {M}. {S}train and {T}ak {K}wong {W}ong},
+  title     = {{Magnetic confinement for the 2D axisymmetric relativistic Vlasov-Maxwell system in an annulus}},
+  journal   = {Kinet. Relat. Models},
+  volume    = {15},
+  number    = {4},
+  pages     = {569--604},
+  year      = {2022},
+  doi       = {10.3934/krm.2021039},
+  eprint    = {2111.04583}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2021</summary><ul class="pub-items">
+<li class="pub" id="pub-ChapmanJangStrain2020" data-year="2021" data-keywords="relativistic Boltzmann equation|Kinetic Theory|relativistic Kinetic Theory"><span class="pub-authors">James Chapman, Jin Woo Jang, and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1007/s00220-021-04101-2">On the Determinant Problem for the Relativistic Boltzmann Equation</a>. <span class="pub-venue"><span class="journal">Comm. Math. Phys.</span> <span class="vol">384</span> (2021), 1913–1943. <span class="note">Published online May 7, 2021</span>.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/2006.02540" title="arXiv:2006.02540">arXiv</a> <a class="pub-link" href="https://doi.org/10.1007/s00220-021-04101-2" title="doi:10.1007/s00220-021-04101-2">DOI</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>This article considers a long-outstanding open question regarding the Jacobian determinant for the relativistic Boltzmann equation in the center-of-momentum coordinates. For the Newtonian Boltzmann equation, the center-of-momentum coordinates have played a large role in the study of the Newtonian non-cutoff Boltzmann equation, in particular we mention the widely used cancellation lemma by Alexandre et al. (Arch. Ration. Mech. Anal. 152(4):327–355, 2000). In this article we calculate specifically the very complicated Jacobian determinant, in ten variables, for the relativistic collision map from the momentum $p$ to the post collisional momentum $p'$; specifically we calculate the determinant for $p\mapsto u = \theta p'+(1-\theta )p$ for $\theta \in [0,1]$. Afterwards we give an upper-bound for this determinant that has no singularity in both $p$ and $q$ variables. Next we give an example where we prove that the Jacobian goes to zero in a specific pointwise limit. We further explain the results of our numerical study which shows that the Jacobian determinant has a very large number of distinct points at which it is machine zero. This generalizes the work of Glassey–Strauss (Transport Theory Statist. Phys. 20(1):55–68, 1991) and Guo–Strain (Comm. Math. Phys. 310(3):649–673, 2012). These conclusions make it difficult to envision a direct relativistic analog of the Newtonian cancellation lemma in the center-of-momentum coordinates.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{ChapmanJangStrain2020,
+  author    = {Chapman, James and Jang, Jin Woo and Strain, Robert M.},
+  title     = {{On the Determinant Problem for the Relativistic Boltzmann Equation}},
+  journal   = {Comm. Math. Phys.},
+  volume    = {384},
+  pages     = {1913--1943},
+  year      = {2021},
+  note      = {published online May 7, 2021},
+  doi       = {10.1007/s00220-021-04101-2},
+  eprint    = {2006.02540}
+}</pre></details></div></li>
+<li class="pub" id="pub-1904-12086" data-year="2021" data-keywords="Boltzmann equation|Landau equation|Kinetic Theory|non-cutoff"><span class="pub-authors">Renjun Duan, Shuangqian Liu, Shota Sakamoto, and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1002/cpa.21920">Global mild solutions of the Landau and non-cutoff Boltzmann equations</a>. <span class="pub-venue"><span class="journal">Comm. Pure Appl. Math.</span> <span class="vol">74</span> (2021), no. 5, 932–1020.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/1904.12086" title="arXiv:1904.12086">arXiv</a> <a class="pub-link" href="https://doi.org/10.1002/cpa.21920" title="doi:10.1002/cpa.21920">DOI</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>This paper proves the existence of small-amplitude global-in-time unique mild solutions to both the Landau equation including the Coulomb potential and the Boltzmann equation without angular cutoff. Since the well-known works (Guo, 2002) and (Gressman–Strain-2011, AMUXY-2012) on the construction of classical solutions in smooth Sobolev spaces which in particular are regular in the spatial variables, it still remains an open problem to obtain global solutions in an $L^\infty_{x,v}$ framework, similar to that in (Guo-2010), for the Boltzmann equation with cutoff in general bounded domains. One main difficulty arises from the interaction between the transport operator and the velocity-diffusion-type collision operator in the non-cutoff Boltzmann and Landau equations; another major difficulty is the potential formation of singularities for solutions to the boundary value problem. In the present work we introduce a new function space with low regularity in the spatial variable to treat the problem in cases when the spatial domain is either a torus, or a finite channel with boundary. For the latter case, either the inflow boundary condition or the specular reflection boundary condition is considered. An important property of the function space is that the $L^\infty_T L^2_v$ norm, in velocity and time, of the distribution function is in the Wiener algebra $A(\Omega)$ in the spatial variables. Besides the construction of global solutions in these function spaces, we additionally study the large-time behavior of solutions for both hard and soft potentials, and we further justify the property of propagation of regularity of solutions in the spatial variables.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{1904.12086,
+  author    = {Renjun Duan and Shuangqian Liu and Shota Sakamoto and Robert M. Strain},
+  title     = {Global mild solutions of the {L}andau and non-cutoff {B}oltzmann equations},
+  journal   = {Comm. Pure Appl. Math.},
+  volume    = {74},
+  number    = {5},
+  pages     = {932--1020},
+  year      = {2021},
+  doi       = {10.1002/cpa.21920},
+  eprint    = {1904.12086}
+}</pre></details></div></li>
+<li class="pub" id="pub-1907-05784" data-year="2021" data-keywords="relativistic Boltzmann equation|Kinetic Theory|relativistic Kinetic Theory"><span class="pub-authors">Jin Woo Jang, <span class="me">Robert M. Strain</span>, and Seok-Bae Yun.</span> <a class="pub-title" href="https://doi.org/10.1007/s00205-021-01649-0">Propagation of uniform upper bounds for the spatially homogeneous relativistic Boltzmann equation</a>. <span class="pub-venue"><span class="journal">Arch. Ration. Mech. Anal.</span> <span class="vol">241</span> (2021), no. 1, 149–186.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/1907.05784" title="arXiv:1907.05784">arXiv</a> <a class="pub-link" href="https://doi.org/10.1007/s00205-021-01649-0" title="doi:10.1007/s00205-021-01649-0">DOI</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In this paper, we prove the propagation of uniform upper bounds for the spatially homogeneous relativistic Boltzmann equation. These $L^\infty$ bounds have been known to be a challenging open problem in relativistic kinetic theory. To accomplish this, we establish two types of estimates for the gain part of the collision operator: first, we prove a potential type estimate and a relativistic hyper-surface integral estimate. We then combine those estimates using the relativistic counter-part of the Carleman representation to derive uniform control of the gain term for the relativistic collision operator. This allows us to prove the desired propagation of the uniform bounds of the solution. We further present two applications of the propagation of the uniform upper bounds: first we give another proof of the Boltzmann $H$-theorem, and second we prove the asymptotic convergence of solutions to the relativistic Maxwellian equilibrium.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{1907.05784,
+  author    = {Jin Woo Jang and Robert M. Strain and Seok-Bae Yun},
+  title     = {{Propagation of uniform upper bounds for the spatially homogeneous relativistic Boltzmann equation}},
+  journal   = {Arch. Ration. Mech. Anal.},
+  volume    = {241},
+  number    = {1},
+  pages     = {149--186},
+  year      = {2021},
+  doi       = {10.1007/s00205-021-01649-0},
+  eprint    = {1907.05784}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2020</summary><ul class="pub-items">
+<li class="pub" id="pub-RIMSbessatsu2020" data-year="2020" data-keywords="Boltzmann equation|Landau equation|Kinetic Theory|non-cutoff"><span class="pub-authors">Renjun Duan, Shuangqian Liu, Shota Sakamoto, and <span class="me">Robert M. Strain</span>.</span> <span class="pub-title">Global solutions to the Boltzmann equation without angular cutoff and the Landau equation with Coulomb potential</span>. <span class="pub-venue"><span class="journal">RIMS Kôkyûroku Bessatsu</span> <span class="vol">B82</span> (2020), 29–46. <span class="note">Proceedings of symposium on “Regularity and Asymptotic Analysis for Critical Cases of Partial Differential Equations”</span>.</span><span class="pub-links"> <a class="pub-link" href="http://www.kurims.kyoto-u.ac.jp/~kenkyubu/bessatsu.html" title="Preprint PDF">PDF</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>This report succinctly summarizes results proved in the authors' recent work (2019) where the unique existence of solutions to the Boltzmann equation without angular cut-off and the Landau equation with Coulomb potential are studied in a perturbation framework. A major feature is the use of the Wiener space $A(\Omega)$, which can be expected to play a similar role to $L^\infty$. Compared to the $L^2$-based solution spaces that were employed for prior known results, this function space enables us to establish a new global existence theory. One further feature is that, not only an initial value problem, but also an initial boundary value problem whose boundary conditions can be regarded as physical boundaries in some simple situation, are considered for both equations. In addition to unique existence, large-time behavior of the solutions and propagation of spatial regularity are also proved. In the end of report, key ideas of the proof will be explained in a concise way.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{RIMSbessatsu2020,
+  author    = {Renjun Duan and Shuangqian Liu and Shota Sakamoto and Robert M. Strain},
+  title     = {{G}lobal solutions to the {B}oltzmann equation without angular cutoff and the {L}andau equation with {C}oulomb potential},
+  journal   = {RIMS K{\^o}ky{\^u}roku {B}essatsu},
+  volume    = {B82},
+  pages     = {29--46},
+  year      = {2020},
+  note      = {proceedings of symposium on ``Regularity and Asymptotic Analysis for Critical Cases of Partial Differential Equations&#x27;&#x27;}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2019</summary><ul class="pub-items">
+<li class="pub" id="pub-GGPS19" data-year="2019" data-keywords="Fluid mechanics|Free boundary problems|Muskat problem"><span class="pub-authors">Francisco Gancedo, Eduardo García-Juárez, Neel Patel, and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1016/j.aim.2019.01.017">On the Muskat problem with viscosity jump: Global in time results</a>. <span class="pub-venue"><span class="journal">Adv. Math.</span> <span class="vol">345</span> (2019), 552–597.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/1710.11604" title="arXiv:1710.11604">arXiv</a> <a class="pub-link" href="https://doi.org/10.1016/j.aim.2019.01.017" title="doi:10.1016/j.aim.2019.01.017">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=3899970" title="MR3899970 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>The Muskat problem models the filtration of two incompressible immiscible fluids of different characteristics in porous media. In this paper, we consider both the 2D and 3D setting of two fluids of different constant densities and different constant viscosities. In this situation, the related contour equations are non-local, not only in the evolution system, but also in the implicit relation between the amplitude of the vorticity and the free interface. Among other extra difficulties, no maximum principles are available for the amplitude and the slopes of the interface in $L^\infty$. We prove global in time existence results for medium size initial stable data in critical spaces. We also enhance previous methods by showing smoothing (instant analyticity), improving the medium size constant in 3D, together with sharp decay rates of analytic norms. The found technique is twofold, giving ill-posedness in unstable situations for very low regular solutions.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{GGPS19,
+  author    = {Francisco Gancedo and Eduardo Garc{\&#x27;{i}}a-Ju{\&#x27;{a}}rez and Neel Patel and Robert M. Strain},
+  title     = {On the {M}uskat problem with viscosity jump: {G}lobal in time results},
+  journal   = {Adv. Math.},
+  volume    = {345},
+  pages     = {552--597},
+  year      = {2019},
+  doi       = {10.1016/j.aim.2019.01.017},
+  eprint    = {1710.11604},
+  issn      = {0001-8708},
+  mrnumber  = {3899970},
+  zblnumber = {07021548}
+}</pre></details></div></li>
+<li class="pub" id="pub-LS2019" data-year="2019" data-keywords="Free boundary problems|Materials science"><span class="pub-authors">Jian-Guo Liu and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.4171/IFB/417">Global stability for solutions to the exponential PDE describing epitaxial growth</a>. <span class="pub-venue"><span class="journal">Interfaces Free Bound.</span> <span class="vol">21</span> (2019), no. 1, 61–86.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/1805.02246" title="arXiv:1805.02246">arXiv</a> <a class="pub-link" href="https://doi.org/10.4171/IFB/417" title="doi:10.4171/IFB/417">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=3951578" title="MR3951578 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In this paper we prove the global existence, uniqueness, optimal large time decay rates, and uniform gain of analyticity for the exponential PDE $h_t=\Delta e^{-\Delta h}$ in the whole space $\mathbb{R}^d_x$. We assume the initial data is of medium size in the critical Wiener algebra $\Delta h \in A(\mathbb{R}^d)$. This exponential PDE was derived in (Krug, Dobbs, and Majaniemi in 1995) and more recently in (Marzuola and Weare 2013).</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{LS2019,
+  author    = {Jian-Guo Liu and Robert M. Strain},
+  title     = {Global stability for solutions to the exponential {PDE} describing epitaxial growth},
+  journal   = {Interfaces Free Bound.},
+  volume    = {21},
+  number    = {1},
+  pages     = {61--86},
+  year      = {2019},
+  doi       = {10.4171/IFB/417},
+  eprint    = {1805.02246},
+  issn      = {1463-9963},
+  mrnumber  = {3951578},
+  zblnumber = {07084773}
+}</pre></details></div></li>
+<li class="pub" id="pub-StrainTas2019" data-year="2019" data-keywords="relativistic Landau equation|Landau equation|Kinetic Theory|relativistic Kinetic Theory"><span class="pub-authors"><span class="me">Robert M. Strain</span> and Maja Tasković.</span> <a class="pub-title" href="https://doi.org/10.1016/j.jfa.2019.04.007">Entropy dissipation estimates for the relativistic Landau equation, and applications</a>. <span class="pub-venue"><span class="journal">J. Funct. Anal.</span> <span class="vol">277</span> (2019), no. 4, 1139–1201.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/1806.08720" title="arXiv:1806.08720">arXiv</a> <a class="pub-link" href="https://doi.org/10.1016/j.jfa.2019.04.007" title="doi:10.1016/j.jfa.2019.04.007">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=3959729" title="MR3959729 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In this paper we study the Cauchy problem for the spatially homogeneous relativistic Landau equation with Coulomb interactions. Despite it’s physical importance, this equation has not received a lot of mathematical attention we think due to the extreme complexity of the relativistic structure of the kernel of the collision operator. In this paper we first largely decompose the structure of the relativistic Landau collision operator. After that we prove the global Entropy dissipation estimate. Then we prove the propagation of any polynomial moment for a weak solution. Lastly we prove the existence of a true weak solution for a large class of initial data.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{StrainTas2019,
+  author    = {Strain, Robert M. and Taskovi{\&#x27;{c}}, Maja},
+  title     = {{E}ntropy dissipation estimates for the relativistic {L}andau equation, and applications},
+  journal   = {J. Funct. Anal.},
+  volume    = {277},
+  number    = {4},
+  pages     = {1139--1201},
+  year      = {2019},
+  doi       = {10.1016/j.jfa.2019.04.007},
+  eprint    = {1806.08720},
+  issn      = {0022-1236},
+  mrnumber  = {3959729},
+  zblnumber = {07066836}
+}</pre></details></div></li>
+<li class="pub" id="pub-1903-05301" data-year="2019" data-keywords="relativistic Landau equation|Landau equation|Kinetic Theory|relativistic Kinetic Theory"><span class="pub-authors"><span class="me">Robert M. Strain</span> and Zhenfu Wang.</span> <a class="pub-title" href="https://doi.org/10.1090/qam/1545">Uniqueness of Bounded Solutions for the Homogeneous Relativistic Landau Equation with Coulomb Interactions</a>. <span class="pub-venue"><span class="journal">Quart. Appl. Math.</span> (2019).</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/1903.05301" title="arXiv:1903.05301">arXiv</a> <a class="pub-link" href="https://doi.org/10.1090/qam/1545" title="doi:10.1090/qam/1545">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=4042221" title="MR4042221 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>We prove the uniqueness of weak solutions to the spatially homogeneous special relativistic Landau equation under the conditional assumption that the solution satisfies $(p^0)^7 F(t,p) \in L^1 ([0,T]; L^\infty)$. The existence of standard weak solutions to the relativistic Landau equation has been shown recently in (Strain-Tasković 2019, 1806.08720).</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{1903.05301,
+  author    = {Robert M. Strain and Zhenfu Wang},
+  title     = {Uniqueness of Bounded Solutions for the Homogeneous Relativistic {L}andau Equation with {C}oulomb Interactions},
+  journal   = {Quart. Appl. Math.},
+  year      = {2019},
+  doi       = {10.1090/qam/1545},
+  eprint    = {1903.05301},
+  mrnumber  = {4042221},
+  zblnumber = {1427.82044}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2017</summary><ul class="pub-items">
+<li class="pub" id="pub-161005271" data-year="2017" data-keywords="Fluid mechanics|Free boundary problems|Muskat problem"><span class="pub-authors">Neel Patel and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1080/03605302.2017.1321661">Large time decay estimates for the Muskat equation</a>. <span class="pub-venue"><span class="journal">Comm. Partial Differential Equations</span> <span class="vol">42</span> (2017), no. 6, 977–999.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/1610.05271" title="arXiv:1610.05271">arXiv</a> <a class="pub-link" href="https://doi.org/10.1080/03605302.2017.1321661" title="doi:10.1080/03605302.2017.1321661">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=3683311" title="MR3683311 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>We prove time decay of solutions to the Muskat equation in 2D and in 3D. We consider the norm $\|f\|_{s}(t)$. In this paper, for the 3D Muskat problem, given initial data $f_{0}\in H^{l}(\mathbb{R}^{2})$ for some $l\geq 3$ such that $\|f_{0}\|_{1} &lt; k_{0}$ for a constant $k_{0} \approx 1/5$, we prove uniform in time bounds of $\|f\|_{s}(t)$ for $-d &lt; s &lt; l-1$ and assuming $\|f_{0}\|_{\nu} &lt; \infty$ we prove time decay estimates of the form $\|f\|_{s}(t) \lesssim (1+t)^{-s+\nu}$ for $0 \leq s \leq l-1$ and $-d \leq \nu &lt; s$. These large time decay rates are the same as the optimal rate for the linear Muskat equation. We also prove analogous results in 2D.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{161005271,
+  author    = {Patel, Neel and Strain, Robert M.},
+  title     = {Large time decay estimates for the {M}uskat equation},
+  journal   = {Comm. Partial Differential Equations},
+  volume    = {42},
+  number    = {6},
+  pages     = {977--999},
+  year      = {2017},
+  doi       = {10.1080/03605302.2017.1321661},
+  eprint    = {1610.05271},
+  issn      = {0360-5302},
+  mrnumber  = {3683311},
+  zblnumber = {1378.35245}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2016</summary><ul class="pub-items">
+<li class="pub" id="pub-CCGRS16" data-year="2016" data-keywords="Fluid mechanics|Free boundary problems|Muskat problem"><span class="pub-authors">Peter Constantin, Diego Córdoba, Francisco Gancedo, Luis Rodríguez-Piazza, and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1353/ajm.2016.0044">On the Muskat problem: global in time results in 2D and 3D</a>. <span class="pub-venue"><span class="journal">Amer. J. Math.</span> <span class="vol">138</span> (2016), no. 6, 1455–1494.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/1310.0953" title="arXiv:1310.0953">arXiv</a> <a class="pub-link" href="https://doi.org/10.1353/ajm.2016.0044" title="doi:10.1353/ajm.2016.0044">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=3595492" title="MR3595492 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>This paper considers the three dimensional Muskat problem in the stable regime. We obtain a conservation law which provides an $L^2$ maximum principle for the fluid interface. We also show global in time existence for strong and weak solutions with initial data controlled by explicit constants. Furthermore we refine the estimates from our prior paper to obtain global existence and uniqueness for strong solutions with larger initial data than we previously had in 2D. Finally we provide global in time results in critical spaces, giving solutions with bounded slope and time integrable bounded curvature.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{CCGRS16,
+  author    = {Constantin, Peter and C\&#x27;{o}rdoba, Diego and Gancedo, Francisco and Rodr\&#x27;{i}guez-Piazza, Luis and Strain, Robert M.},
+  title     = {On the {M}uskat problem: global in time results in 2{D} and 3{D}},
+  journal   = {Amer. J. Math.},
+  volume    = {138},
+  number    = {6},
+  pages     = {1455--1494},
+  year      = {2016},
+  doi       = {10.1353/ajm.2016.0044},
+  eprint    = {1310.0953},
+  issn      = {0002-9327},
+  mrnumber  = {3595492},
+  zblnumber = {1369.35053}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR3437855" data-year="2016" data-keywords="Kinetic Theory|relativistic Kinetic Theory|Vlasov-Maxwell systems"><span class="pub-authors">Jonathan Luk and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1007/s00205-015-0899-1">Strichartz estimates and moment bounds for the relativistic Vlasov-Maxwell system</a>. <span class="pub-venue"><span class="journal">Arch. Ration. Mech. Anal.</span> <span class="vol">219</span> (2016), no. 1, 445–552. <span class="note">Paper combined from \urlhttps://arxiv.org/abs/1406.0168 and \urlhttps://arxiv.org/abs/1406.0169</span>.</span><span class="pub-links"> <a class="pub-link" href="https://doi.org/10.1007/s00205-015-0899-1" title="doi:10.1007/s00205-015-0899-1">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=3437855" title="MR3437855 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>We consider the relativistic Vlasov–Maxwell system with data of unrestricted size and without compact support in momentum space. In the two dimensional and the two-and-a-half dimensional cases, Glassey–Schaeffer proved (Commun Math Phys 185:257–284, 1997; Arch Ration Mech Anal 141:331–354, 1998; Arch Ration Mech Anal. 141:355–374, 1998) that for regular initial data with compact momentum support this system has unique global in time classical solutions. In this work we do not assume compact momentum support for the initial data and instead require only that the data have polynomial decay in momentum space. In the 2D and the $2\frac 12$D cases, we prove the global existence, uniqueness and regularity for solutions arising from this class of initial data. To this end we use Strichartz estimates and prove that suitable moments of the solution remain bounded. Moreover, we obtain a slight improvement of the temporal growth of the $L^\infty_x$ norms of the electromagnetic fields compared to (Commun Math Phys 185:257–284, 1997; Arch Ration Mech Anal 141:355–374, 1998). In the three dimensional case, we apply Strichartz estimates and moment bounds to show that a regular solution can be extended as long as $\|(p^0)^{\theta} f \|_{L^q_xL^1_{p}}$ remains bounded for $\theta&gt;{2/q}$ and $q \in (2, \infty]$. This improves previous results of Pallard (Indiana Univ Math J 54(5):1395–1409, 2005; Commun Math Sci 13(2):347–354, 2015).</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR3437855,
+  author    = {Luk, Jonathan and Strain, Robert M.},
+  title     = {Strichartz estimates and moment bounds for the relativistic {V}lasov-{M}axwell system},
+  journal   = {Arch. Ration. Mech. Anal.},
+  volume    = {219},
+  number    = {1},
+  pages     = {445--552},
+  year      = {2016},
+  note      = {Paper combined from \url{https://arxiv.org/abs/1406.0168} and \url{https://arxiv.org/abs/1406.0169}},
+  doi       = {10.1007/s00205-015-0899-1},
+  issn      = {0003-9527},
+  mrnumber  = {3437855},
+  zblnumber = {1337.35150}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR3437599" data-year="2016" data-keywords="Fluid mechanics"><span class="pub-authors"><span class="me">Robert M. Strain</span> and Tak Kwong Wong.</span> <a class="pub-title" href="https://doi.org/10.1016/j.jde.2015.11.023">Axisymmetric flow of ideal fluid moving in a narrow domain: a study of the axisymmetric hydrostatic Euler equations</a>. <span class="pub-venue"><span class="journal">J. Differential Equations</span> <span class="vol">260</span> (2016), no. 5, 4619–4656.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/1505.06281" title="arXiv:1505.06281">arXiv</a> <a class="pub-link" href="https://doi.org/10.1016/j.jde.2015.11.023" title="doi:10.1016/j.jde.2015.11.023">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=3437599" title="MR3437599 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In this article we will introduce a new model to describe the leading order behavior of an ideal and axisymmetric fluid moving in a very narrow domain. After providing a formal derivation of the model, we will prove the well-posedness and provide a rigorous mathematical justification for the formal derivation under a new sign condition. Finally, a blowup result regarding this model will be discussed as well.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR3437599,
+  author    = {Strain, Robert M. and Wong, Tak Kwong},
+  title     = {Axisymmetric flow of ideal fluid moving in a narrow domain: a study of the axisymmetric hydrostatic {E}uler equations},
+  journal   = {J. Differential Equations},
+  volume    = {260},
+  number    = {5},
+  pages     = {4619--4656},
+  year      = {2016},
+  doi       = {10.1016/j.jde.2015.11.023},
+  eprint    = {1505.06281},
+  issn      = {0022-0396},
+  mrnumber  = {3437599},
+  zblnumber = {1333.35170}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2014</summary><ul class="pub-items">
+<li class="pub" id="pub-MR3181769" data-year="2014" data-keywords="Fluid mechanics|Free boundary problems|Muskat problem"><span class="pub-authors">Francisco Gancedo and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1073/pnas.1320554111">Absence of splash singularities for surface quasi-geostrophic sharp fronts and the Muskat problem</a>. <span class="pub-venue"><span class="journal">Proc. Natl. Acad. Sci. USA</span> <span class="vol">111</span> (2014), no. 2, 635–639.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/1309.4023" title="arXiv:1309.4023">arXiv</a> <a class="pub-link" href="https://doi.org/10.1073/pnas.1320554111" title="doi:10.1073/pnas.1320554111">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=3181769" title="MR3181769 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In this paper for either the sharp front Surface Quasi-Geostrophic equation or the Muskat problem we rule out the ‘'splash singularity” blow-up scenario; in other words we prove that the contours evolving from either of these systems can not intersect at a single point while the free boundary remains smooth. Splash singularities have been shown to hold for the free boundary incompressible Euler equation in the form of the water waves contour evolution problem (Castro A, et al. (2012) Proc Natl Acad Sci USA 109:733-738). Our result confirms the numerical simulations in (Córdoba D, et al. (2005) Proc Natl Acad Sci USA 102:5949-5952) where it is shown that the curvature blows up due to the contours collapsing at a point. Here we prove that maintaining control of the curvature will remove the possibility of pointwise interphase collapse. Another conclusion that we provide is a better understanding of the work (Córdoba D, Gancedo F (2010) Comm Math Phys 299:561-575) in which squirt singularities are ruled out; in this case a positive volume of fluid between the contours can not be ejected in finite time.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR3181769,
+  author    = {Gancedo, Francisco and Strain, Robert M.},
+  title     = {Absence of splash singularities for surface quasi-geostrophic sharp fronts and the {M}uskat problem},
+  journal   = {Proc. Natl. Acad. Sci. USA},
+  volume    = {111},
+  number    = {2},
+  pages     = {635--639},
+  year      = {2014},
+  publisher = {Proceedings of the National Academy of Sciences},
+  doi       = {10.1073/pnas.1320554111},
+  eprint    = {1309.4023},
+  issn      = {0027-8424},
+  mrnumber  = {3181769},
+  zblnumber = {1355.76065}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR3248056" data-year="2014" data-keywords="Kinetic Theory|relativistic Kinetic Theory|Vlasov-Maxwell systems"><span class="pub-authors">Jonathan Luk and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1007/s00220-014-2108-8">A new continuation criterion for the relativistic Vlasov-Maxwell system</a>. <span class="pub-venue"><span class="journal">Comm. Math. Phys.</span> <span class="vol">331</span> (2014), no. 3, 1005–1027.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/1406.0165" title="arXiv:1406.0165">arXiv</a> <a class="pub-link" href="https://doi.org/10.1007/s00220-014-2108-8" title="doi:10.1007/s00220-014-2108-8">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=3248056" title="MR3248056 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>The global existence of solutions to the relativistic Vlasov–Maxwell system given sufficiently regular finite energy initial data is a longstanding open problem. The main result of Glassey–Strauss 1986 shows that a solution $(f, E, B)$ remains $C^1$ as long as the momentum support of $f$ remains bounded. Alternate proofs were later given by Bouchut–Golse–Pallard 2003 and Klainerman–Staffilani 2002. We show that only the boundedness of the momentum support of $f$ <i>after projecting to any two dimensional plane</i> is needed for $(f, E, B)$ to remain $C^1$.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR3248056,
+  author    = {Luk, Jonathan and Strain, Robert M.},
+  title     = {A new continuation criterion for the relativistic {V}lasov-{M}axwell system},
+  journal   = {Comm. Math. Phys.},
+  volume    = {331},
+  number    = {3},
+  pages     = {1005--1027},
+  year      = {2014},
+  doi       = {10.1007/s00220-014-2108-8},
+  eprint    = {1406.0165},
+  issn      = {0010-3616},
+  mrnumber  = {3248056},
+  zblnumber = {1309.35174}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR3213301" data-year="2014" data-keywords="Boltzmann equation|non-cutoff|Kinetic Theory"><span class="pub-authors">Vedran Sohinger and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1016/j.aim.2014.04.012">The Boltzmann equation, Besov spaces, and optimal time decay rates in $\mathbb{R}_x^n$</a>. <span class="pub-venue"><span class="journal">Adv. Math.</span> <span class="vol">261</span> (2014), 274–332.</span><span class="pub-links"> <a class="pub-link" href="https://arxiv.org/abs/1206.0027" title="arXiv:1206.0027">arXiv</a> <a class="pub-link" href="https://doi.org/10.1016/j.aim.2014.04.012" title="doi:10.1016/j.aim.2014.04.012">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=3213301" title="MR3213301 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>We prove that $k$-th order derivatives of perturbative classical solutions to the hard and soft potential Boltzmann equation (without the angular cut-off assumption) in the whole space, ${\mathbb R}^{n}_x$ with ${n \ge 3}$, converge in large time to the global Maxwellian with the optimal decay rate of $t^{-\frac{1}{2}(k+r+\frac{n}{2}-\frac{n}{r})}$ in the $L^r_x(L^2_{v})$-norm for any $2\leq r\leq \infty$. These results hold for any $r \in (0, n/2]$ as long as initially $\| f_0\|_{\dot{B}^{-r,\infty}_2 L^2_{v}} &lt; \infty$. In the hard potential case, we prove faster decay results in the sense that if $\| \mathbf{P} f_0\|_{\dot{B}^{-r,\infty}_2 L^2_{v}} &lt; \infty$ and $\| \{\mathbf{I} - \mathbf{P}\} f_0\|_{\dot{B}^{-r+1,\infty}_2 L^2_{v}} &lt; \infty$ for $r \in (n/2, (n+2)/2]$ then the solution decays the global Maxwellian in $L^2_v(L^2_x)$ with the optimal large time decay rate of $t^{-\frac{1}{2} r}$.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR3213301,
+  author    = {Sohinger, Vedran and Strain, Robert M.},
+  title     = {The {B}oltzmann equation, {B}esov spaces, and optimal time decay rates in {$\mathbb{R}_x^n$}},
+  journal   = {Adv. Math.},
+  volume    = {261},
+  pages     = {274--332},
+  year      = {2014},
+  publisher = {Elsevier (Academic Press), San Diego, CA},
+  doi       = {10.1016/j.aim.2014.04.012},
+  eprint    = {1206.0027},
+  issn      = {0001-8708},
+  mrnumber  = {3213301},
+  zblnumber = {1293.35195}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR3166961" data-year="2014" data-keywords="relativistic Boltzmann equation|Kinetic Theory|relativistic Kinetic Theory"><span class="pub-authors"><span class="me">Robert M. Strain</span> and Seok-Bae Yun.</span> <a class="pub-title" href="https://doi.org/10.1137/130923531">Spatially homogeneous Boltzmann equation for relativistic particles</a>. <span class="pub-venue"><span class="journal">SIAM J. Math. Anal.</span> <span class="vol">46</span> (2014), no. 1, 917–938.</span><span class="pub-links"> <a class="pub-link" href="preprints/92353.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://doi.org/10.1137/130923531" title="doi:10.1137/130923531">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=3166961" title="MR3166961 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>The spatially homogeneous Boltzmann equation has been studied extensively in the Newtonian case, but not much is known for the special relativistic case. In this paper, we address several issues for the spatially homogeneous Boltzmann equation for relativistic particles. We first derive the relativistic version of the Povzner inequality. Using this, we study the Cauchy problem and investigate how the polynomial and exponential moments in $L^1$ are propagated. Several key differences between the relativistic and the Newtonian cases are confronted and discussed.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR3166961,
+  author    = {Strain, Robert M. and Yun, Seok-Bae},
+  title     = {Spatially homogeneous {B}oltzmann equation for relativistic particles},
+  journal   = {SIAM J. Math. Anal.},
+  volume    = {46},
+  number    = {1},
+  pages     = {917--938},
+  year      = {2014},
+  doi       = {10.1137/130923531},
+  issn      = {0036-1410},
+  mrnumber  = {3166961},
+  zblnumber = {1321.35127}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2013</summary><ul class="pub-items">
+<li class="pub" id="pub-CCGS13" data-year="2013" data-keywords="Fluid mechanics|Free boundary problems|Muskat problem"><span class="pub-authors">Peter Constantin, Diego Córdoba, Francisco Gancedo, and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.4171/JEMS/360">On the global existence for the Muskat problem</a>. <span class="pub-venue"><span class="journal">J. Eur. Math. Soc. (JEMS)</span> <span class="vol">15</span> (2013), no. 1, 201–227.</span><span class="pub-links"> <a class="pub-link" href="preprints/ccgsMuskat.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/1007.3744" title="arXiv:1007.3744">arXiv</a> <a class="pub-link" href="https://doi.org/10.4171/JEMS/360" title="doi:10.4171/JEMS/360">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2998834" title="MR2998834 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>The Muskat problem models the dynamics of the interface between two incompressible immiscible fluids with different constant densities. In this work we prove three results. First we prove an $L^2(\mathbb{R})$ maximum principle, in the form of a new “log” conservation law which is satisfied by the equation for the interface. Our second result is a proof of global existence of Lipschitz continuous solutions for initial data that satisfy $\|f_0\|_{L^\infty}&lt;\infty$ and $\|\partial_x f_0\|_{L^\infty}&lt;1$. We take advantage of the fact that the bound $\|\partial_x f_0\|_{L^\infty}&lt;1$ is propagated by solutions, which grants strong compactness properties in comparison to the log conservation law. Lastly, we prove a global existence result for unique strong solutions if the initial data is smaller than an explicitly computable constant, for instance $\| f\|_1 \le 1/5$. Previous results of this sort used a small constant $\epsilon \ll1$ which was not explicit.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{CCGS13,
+  author    = {Constantin, Peter and C\&#x27;{o}rdoba, Diego and Gancedo, Francisco and Strain, Robert M.},
+  title     = {On the global existence for the {M}uskat problem},
+  journal   = {J. Eur. Math. Soc. (JEMS)},
+  volume    = {15},
+  number    = {1},
+  pages     = {201--227},
+  year      = {2013},
+  doi       = {10.4171/JEMS/360},
+  eprint    = {1007.3744},
+  issn      = {1435-9855},
+  mrnumber  = {2998834},
+  zblnumber = {1258.35002}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR2982812" data-year="2013" data-keywords="relativistic Boltzmann equation|Kinetic Theory|relativistic Kinetic Theory"><span class="pub-authors">Seung-Yeal Ha, Eunhee Jeong, and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.3934/cpaa.2013.12.1141">Uniform $L^1$-stability of the relativistic Boltzmann equation near vacuum</a>. <span class="pub-venue"><span class="journal">Commun. Pure Appl. Anal.</span> <span class="vol">12</span> (2013), no. 2, 1141–1161.</span><span class="pub-links"> <a class="pub-link" href="preprints/cpaa0494.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://doi.org/10.3934/cpaa.2013.12.1141" title="doi:10.3934/cpaa.2013.12.1141">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2982812" title="MR2982812 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>We present the uniform $L^1$-stability estimate for the relativistic Boltzmann equation near vacuum. For this, we explicitly construct a relativistic counterpart of the nonlinear functional which is a linear combination of $L^1$-distance and a collision potential. This functional measures the $L^1$-distance between two continuous mild solutions. When the initial data is sufficiently small and decays exponentially fast, we show that the functional satisfies the uniform stability estimate leading to the uniform $L^1$-stability estimate with respect to initial data.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2982812,
+  author    = {Ha, Seung-Yeal and Jeong, Eunhee and Strain, Robert M.},
+  title     = {Uniform {$L^1$}-stability of the relativistic {B}oltzmann equation near vacuum},
+  journal   = {Commun. Pure Appl. Anal.},
+  volume    = {12},
+  number    = {2},
+  pages     = {1141--1161},
+  year      = {2013},
+  doi       = {10.3934/cpaa.2013.12.1141},
+  issn      = {1534-0392},
+  mrnumber  = {2982812},
+  zblnumber = {1267.35162}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR3101794" data-year="2013" data-keywords="Landau equation|Vlasov-Maxwell systems|Kinetic Theory"><span class="pub-authors"><span class="me">Robert M. Strain</span> and Keya Zhu.</span> <a class="pub-title" href="https://doi.org/10.1007/s00205-013-0658-0">The Vlasov-Poisson-Landau system in $\mathbb{R}^3_x$</a>. <span class="pub-venue"><span class="journal">Arch. Ration. Mech. Anal.</span> <span class="vol">210</span> (2013), no. 2, 615–671.</span><span class="pub-links"> <a class="pub-link" href="preprints/2012szLandauP.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/1202.2471" title="arXiv:1202.2471">arXiv</a> <a class="pub-link" href="https://doi.org/10.1007/s00205-013-0658-0" title="doi:10.1007/s00205-013-0658-0">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=3101794" title="MR3101794 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>For the Landau–Poisson system with Coulomb interaction in $\mathbb{R}^3_x$, we prove the global existence, uniqueness, and large time convergence rates to the Maxwellian equilibrium for solutions which start out sufficiently close.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR3101794,
+  author    = {Strain, Robert M. and Zhu, Keya},
+  title     = {The {V}lasov-{P}oisson-{L}andau system in {$\mathbb{R}^3_x$}},
+  journal   = {Arch. Ration. Mech. Anal.},
+  volume    = {210},
+  number    = {2},
+  pages     = {615--671},
+  year      = {2013},
+  doi       = {10.1007/s00205-013-0658-0},
+  eprint    = {1202.2471},
+  issn      = {0003-9527},
+  mrnumber  = {3101794},
+  zblnumber = {1294.35168}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2012</summary><ul class="pub-items">
+<li class="pub" id="pub-MR3129108" data-year="2012" data-keywords="Navier-Stokes equations|Fluid mechanics"><span class="pub-authors">Hongjie Dong and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1512/iumj.2012.61.4765">On partial regularity of steady-state solutions to the 6D Navier-Stokes equations</a>. <span class="pub-venue"><span class="journal">Indiana Univ. Math. J.</span> <span class="vol">61</span> (2012), no. 6, 2211–2229.</span><span class="pub-links"> <a class="pub-link" href="preprints/ds6DssNSE.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/1101.5580" title="arXiv:1101.5580">arXiv</a> <a class="pub-link" href="https://doi.org/10.1512/iumj.2012.61.4765" title="doi:10.1512/iumj.2012.61.4765">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=3129108" title="MR3129108 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>Consider steady-state weak solutions to the incompressible Navier–Stokes equations in six spatial dimensions. We prove that the 2D Hausdorff measure of the set of singular points is equal to zero. This problem was mentioned in 1988 by Struwe, during his study of the five dimensional case.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR3129108,
+  author    = {Dong, Hongjie and Strain, Robert M.},
+  title     = {On partial regularity of steady-state solutions to the 6{D} {N}avier-{S}tokes equations},
+  journal   = {Indiana Univ. Math. J.},
+  volume    = {61},
+  number    = {6},
+  pages     = {2211--2229},
+  year      = {2012},
+  doi       = {10.1512/iumj.2012.61.4765},
+  eprint    = {1101.5580},
+  issn      = {0022-2518},
+  mrnumber  = {3129108},
+  zblnumber = {1286.35193}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR3050180" data-year="2012" data-keywords="Boltzmann equation|Vlasov-Maxwell systems|Kinetic Theory"><span class="pub-authors">Renjun Duan and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10/c74v">On the Full Dissipative Property of the Vlasov-Poisson-Boltzmann System</a>. <span class="pub-venue">In <i>Hyperbolic problems—theory, numerics and applications. Volume 2</i>, Ser. Contemp. Appl. Math. CAM 17 (2012), 398–405.</span><span class="pub-links"> <a class="pub-link" href="preprints/2012DuanStrainHype.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://doi.org/10/c74v" title="doi:10/c74v">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=3050180" title="MR3050180 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In this paper, we present a new approach of studying the full dissipative property of the Vlasov–Poisson–Boltzmann system over the whole space. The key part of this approach is to design the interactive functional to capture the dissipation of the system along the degenerate components. The developed approach is generally applicable to other relevant models arising from plasma physics both at the kinetic and fluid levels.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@incollection{MR3050180,
+  author    = {Renjun Duan and Robert M. Strain},
+  title     = {On the {F}ull {D}issipative {P}roperty of the {V}lasov-{P}oisson-{B}oltzmann {S}ystem},
+  booktitle = {Hyperbolic problems---theory, numerics and applications. {V}olume 2},
+  series    = {Ser. Contemp. Appl. Math. CAM},
+  editor    = {Tatsien Li and Song Jiang},
+  volume    = {17},
+  pages     = {398--405},
+  year      = {2012},
+  publisher = {World Scientific Publishing and Higher Education Press},
+  address   = {Singapore},
+  doi       = {10/c74v},
+  mrnumber  = {3050180},
+  zblnumber = {1293.35339}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR2914961" data-year="2012" data-keywords="Landau equation|Kinetic Theory"><span class="pub-authors">Philip T. Gressman, Joachim Krieger, and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1016/j.aim.2012.02.017">A non-local inequality and global existence</a>. <span class="pub-venue"><span class="journal">Adv. Math.</span> <span class="vol">230</span> (2012), no. 2, 642–648.</span><span class="pub-links"> <a class="pub-link" href="preprints/2012gksINEQ.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/1202.4088" title="arXiv:1202.4088">arXiv</a> <a class="pub-link" href="https://doi.org/10.1016/j.aim.2012.02.017" title="doi:10.1016/j.aim.2012.02.017">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2914961" title="MR2914961 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In this article we prove a collection of new non-linear and non-local integral inequalities. We use these inequalities to deduce global existence of solutions to a non-local heat equation with a quadratic non-linearity for large radial monotonic positive initial conditions. Specifically, we include all $\alpha\in (0, \frac{74}{75})$.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2914961,
+  author    = {Gressman, Philip T. and Krieger, Joachim and Strain, Robert M.},
+  title     = {A non-local inequality and global existence},
+  journal   = {Adv. Math.},
+  volume    = {230},
+  number    = {2},
+  pages     = {642--648},
+  year      = {2012},
+  doi       = {10.1016/j.aim.2012.02.017},
+  eprint    = {1202.4088},
+  issn      = {0001-8708},
+  mrnumber  = {2914961},
+  zblnumber = {1248.35005}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR2891870" data-year="2012" data-keywords="Boltzmann equation|relativistic Boltzmann equation|Vlasov-Maxwell systems|Kinetic Theory|relativistic Kinetic Theory"><span class="pub-authors">Yan Guo and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1007/s00220-012-1417-z">Momentum regularity and stability of the relativistic Vlasov-Maxwell-Boltzmann system</a>. <span class="pub-venue"><span class="journal">Comm. Math. Phys.</span> <span class="vol">310</span> (2012), no. 3, 649–673.</span><span class="pub-links"> <a class="pub-link" href="preprints/gsRVMB.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/1012.1158" title="arXiv:1012.1158">arXiv</a> <a class="pub-link" href="https://doi.org/10.1007/s00220-012-1417-z" title="doi:10.1007/s00220-012-1417-z">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2891870" title="MR2891870 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In the study of solutions to the relativistic Boltzmann equation, their regularity with respect to the momentum variables has been an outstanding question, even local in time, due to the initially unexpected growth in the post-collisional momentum variables which was discovered in 1991 by Glassey &amp; Strauss. We establish momentum regularity within energy spaces via a new splitting technique and interplay between the Glassey–Strauss frame and the center of mass frame of the relativistic collision operator. In a periodic box, these new momentum regularity estimates lead to a proof of global existence of classical solutions to the two-species relativistic Vlasov–Maxwell–Boltzmann system for charged particles near Maxwellian with hard ball interaction.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2891870,
+  author    = {Guo, Yan and Strain, Robert M.},
+  title     = {Momentum regularity and stability of the relativistic {V}lasov-{M}axwell-{B}oltzmann system},
+  journal   = {Comm. Math. Phys.},
+  volume    = {310},
+  number    = {3},
+  pages     = {649--673},
+  year      = {2012},
+  doi       = {10.1007/s00220-012-1417-z},
+  eprint    = {1012.1158},
+  issn      = {0010-3616},
+  mrnumber  = {2891870},
+  zblnumber = {1245.35130}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR2901061" data-year="2012" data-keywords="Landau equation|Kinetic Theory"><span class="pub-authors">Joachim Krieger and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1080/03605302.2011.643437">Global solutions to a non-local diffusion equation with quadratic non-linearity</a>. <span class="pub-venue"><span class="journal">Comm. Partial Differential Equations</span> <span class="vol">37</span> (2012), no. 4, 647–689.</span><span class="pub-links"> <a class="pub-link" href="preprints/03605302.2011.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/1012.2890" title="arXiv:1012.2890">arXiv</a> <a class="pub-link" href="https://doi.org/10.1080/03605302.2011.643437" title="doi:10.1080/03605302.2011.643437">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2901061" title="MR2901061 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In this paper we prove the global in time well-posedness of the following non-local diffusion equation with $\alpha \in (0,2/3)$: $\partial_t u = ((-\Delta)^{-1}u)\Delta u + \alpha u^2$. The initial condition $u_0$ is positive, radial, and non-increasing with $u_0\in L^1\cap L^{2+\delta}({\mathbb R}^3)$ for some small $\delta &gt;0$. There is no size restriction on $u_0$. This model problem appears of interest due to its structural similarity with Landau’s equation from plasma physics, and moreover its radically different behavior from the semi-linear Heat equation: $u_t = \Delta u + \alpha u^2$.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2901061,
+  author    = {Krieger, Joachim and Strain, Robert M.},
+  title     = {Global solutions to a non-local diffusion equation with quadratic non-linearity},
+  journal   = {Comm. Partial Differential Equations},
+  volume    = {37},
+  number    = {4},
+  pages     = {647--689},
+  year      = {2012},
+  doi       = {10.1080/03605302.2011.643437},
+  eprint    = {1012.2890},
+  issn      = {0360-5302},
+  mrnumber  = {2901061},
+  zblnumber = {1247.35087}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR2911100" data-year="2012" data-keywords="Boltzmann equation|relativistic Boltzmann equation|Kinetic Theory"><span class="pub-authors"><span class="me">Robert M. Strain</span> and Keya Zhu.</span> <a class="pub-title" href="https://doi.org/10.3934/krm.2012.5.383">Large-time decay of the soft potential relativistic Boltzmann equation in $\mathbb R^3_x$</a>. <span class="pub-venue"><span class="journal">Kinet. Relat. Models</span> <span class="vol">5</span> (2012), no. 2, 383–415.</span><span class="pub-links"> <a class="pub-link" href="preprints/szRBwhole.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/1106.1579" title="arXiv:1106.1579">arXiv</a> <a class="pub-link" href="https://doi.org/10.3934/krm.2012.5.383" title="doi:10.3934/krm.2012.5.383">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2911100" title="MR2911100 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>For the relativistic Boltzmann equation in $R^3_x$, this work proves the global existence, uniqueness, positivity, and optimal time convergence rates to the relativistic Maxwellian for solutions which start out sufficiently close under the general physical soft potential assumption proposed in 1988.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2911100,
+  author    = {Strain, Robert M. and Zhu, Keya},
+  title     = {Large-time decay of the soft potential relativistic {B}oltzmann equation in {$\mathbb R^3_x$}},
+  journal   = {Kinet. Relat. Models},
+  volume    = {5},
+  number    = {2},
+  pages     = {383--415},
+  year      = {2012},
+  doi       = {10.3934/krm.2012.5.383},
+  eprint    = {1106.1579},
+  issn      = {1937-5093},
+  mrnumber  = {2911100},
+  zblnumber = {1247.76071}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR2972454" data-year="2012" data-keywords="Boltzmann equation|Kinetic Theory|non-cutoff"><span class="pub-authors"><span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.3934/krm.2012.5.583">Optimal time decay of the non cut-off Boltzmann equation in the whole space</a>. <span class="pub-venue"><span class="journal">Kinet. Relat. Models</span> <span class="vol">5</span> (2012), no. 3, 583–613.</span><span class="pub-links"> <a class="pub-link" href="preprints/SdecaySOFT.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/1011.5561" title="arXiv:1011.5561">arXiv</a> <a class="pub-link" href="https://doi.org/10.3934/krm.2012.5.583" title="doi:10.3934/krm.2012.5.583">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2972454" title="MR2972454 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In this paper we study the large-time behavior of perturbative classical solutions to the hard and soft potential Boltzmann equation without the angular cut-off assumption in the whole space ${\mathbb R}^{n}_x$ with $n \ge 3$. We use the existence theory of global in time nearby Maxwellian solutions from previous work. It has been a longstanding open problem to determine the large time decay rates for the soft potential Boltzmann equation in the whole space, with or without the angular cut-off assumption. For perturbative initial data, we prove that solutions converge to the global Maxwellian with the optimal large-time decay rate of $O(t^{-\frac{n}{2}+\frac{n}{2r}})$ in the $L^2_v(L^r_x)$-norm for any $2\leq r\leq \infty$.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2972454,
+  author    = {Strain, Robert M.},
+  title     = {Optimal time decay of the non cut-off {B}oltzmann equation in the whole space},
+  journal   = {Kinet. Relat. Models},
+  volume    = {5},
+  number    = {3},
+  pages     = {583--613},
+  year      = {2012},
+  doi       = {10.3934/krm.2012.5.583},
+  eprint    = {1011.5561},
+  issn      = {1937-5093},
+  mrnumber  = {2972454},
+  zblnumber = {1383.76414}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2011</summary><ul class="pub-items">
+<li class="pub" id="pub-MR2832167" data-year="2011" data-keywords="Boltzmann equation|Vlasov-Maxwell systems|Kinetic Theory"><span class="pub-authors">Renjun Duan and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1002/cpa.20381">Optimal large-time behavior of the Vlasov-Maxwell-Boltzmann system in the whole space</a>. <span class="pub-venue"><span class="journal">Comm. Pure Appl. Math.</span> <span class="vol">64</span> (2011), no. 11, 1497–1546.</span><span class="pub-links"> <a class="pub-link" href="preprints/dsVMB.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/1006.3605" title="arXiv:1006.3605">arXiv</a> <a class="pub-link" href="https://doi.org/10.1002/cpa.20381" title="doi:10.1002/cpa.20381">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2832167" title="MR2832167 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In this paper we study the large-time behavior of classical solutions to the two-species Vlasov–Maxwell–Boltzmann system in the whole space $R^3_x$. The existence of global in time nearby Maxwellian solutions is known from the work of Strain in 2006. However the asymptotic behavior of these solutions has been a challenging open problem. Building on our previous work on time decay for the simpler Vlasov–Poisson–Boltzmann system, we prove that these solutions converge to the global Maxwellian with the optimal decay rate of $O(t^{-\frac{3}{2}+\frac{3}{2r}})$ in $L^2_\xi(L^r_x)$-norm for any $2\leq r\leq \infty$ if initial perturbation is smooth enough and decays in space-velocity fast enough at infinity. Moreover, some explicit rates for the electromagnetic field tending to zero are also provided.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2832167,
+  author    = {Duan, Renjun and Strain, Robert M.},
+  title     = {Optimal large-time behavior of the {V}lasov-{M}axwell-{B}oltzmann system in the whole space},
+  journal   = {Comm. Pure Appl. Math.},
+  volume    = {64},
+  number    = {11},
+  pages     = {1497--1546},
+  year      = {2011},
+  doi       = {10.1002/cpa.20381},
+  eprint    = {1006.3605},
+  issn      = {0010-3640},
+  mrnumber  = {2832167},
+  zblnumber = {1244.35010}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR2754344" data-year="2011" data-keywords="Boltzmann equation|Vlasov-Maxwell systems|Kinetic Theory"><span class="pub-authors">Renjun Duan and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1007/s00205-010-0318-6">Optimal time decay of the Vlasov-Poisson-Boltzmann system in $\mathbb{R}^3$</a>. <span class="pub-venue"><span class="journal">Arch. Ration. Mech. Anal.</span> <span class="vol">199</span> (2011), no. 1, 291–328.</span><span class="pub-links"> <a class="pub-link" href="preprints/dsVPB.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/0912.1742" title="arXiv:0912.1742">arXiv</a> <a class="pub-link" href="https://doi.org/10.1007/s00205-010-0318-6" title="doi:10.1007/s00205-010-0318-6">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2754344" title="MR2754344 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>The Vlasov–Poisson–Boltzmann System governs the time evolution of the distribution function for the dilute charged particles in the presence of a self-consistent electric potential force through the Poisson equation. In this paper, we are concerned with the rate of convergence of solutions to equilibrium for this system over $R^3_x$. It is shown that the electric field which is indeed responsible for the lowest-order part in the energy space reduces the speed of convergence and hence the dispersion of this system over the full space is slower than that of the Boltzmann equation without forces, where the exact difference between both power indices in the algebraic rates of convergence is $1/4$. For the proof, in the linearized case with a given non-homogeneous source, Fourier analysis is employed to obtain time-decay properties of the solution operator. In the nonlinear case, the combination of the linearized results and the nonlinear energy estimates with the help of the proper Lyapunov-type inequalities leads to the optimal time-decay rate of perturbed solutions under some conditions on initial data.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2754344,
+  author    = {Duan, Renjun and Strain, Robert M.},
+  title     = {Optimal time decay of the {V}lasov-{P}oisson-{B}oltzmann system in {$\mathbb{R}^3$}},
+  journal   = {Arch. Ration. Mech. Anal.},
+  volume    = {199},
+  number    = {1},
+  pages     = {291--328},
+  year      = {2011},
+  doi       = {10.1007/s00205-010-0318-6},
+  eprint    = {0912.1742},
+  issn      = {0003-9527},
+  mrnumber  = {2754344},
+  zblnumber = {1232.35169}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR2784329" data-year="2011" data-keywords="Boltzmann equation|Kinetic Theory|non-cutoff"><span class="pub-authors">Philip T. Gressman and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1090/S0894-0347-2011-00697-8">Global classical solutions of the Boltzmann equation without angular cut-off</a>. <span class="pub-venue"><span class="journal">J. Amer. Math. Soc.</span> <span class="vol">24</span> (2011), no. 3, 771–847.</span><span class="pub-links"> <a class="pub-link" href="preprints/gsNonCut.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/1011.5441" title="arXiv:1011.5441">arXiv</a> <a class="pub-link" href="https://doi.org/10.1090/S0894-0347-2011-00697-8" title="doi:10.1090/S0894-0347-2011-00697-8">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2784329" title="MR2784329 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>This work proves the global stability of the Boltzmann equation (1872) with the physical collision kernels derived by Maxwell in 1866 for the full range of inverse-power intermolecular potentials, $r^{-(p-1)}$ with $p&gt;2$, for initial perturbations of the Maxwellian equilibrium states. We more generally cover collision kernels with parameters $s\in (0,1)$ and $\gamma$ satisfying $\gamma &gt; -n$ in arbitrary dimensions $\mathbb{T}^n \times \mathbb{R}^n$ with $n\ge 2$. Moreover, we prove rapid convergence as predicted by the celebrated Boltzmann $H$-theorem. When $\gamma \ge -2s$, we have exponential time decay to the Maxwellian equilibrium states. When $\gamma &lt;-2s$, our solutions decay polynomially fast in time with any rate. These results are completely constructive. Additionally, we prove sharp constructive upper and lower bounds for the linearized collision operator in terms of a geometric fractional Sobolev norm; we thus observe that a spectral gap exists only when $\gamma \ge -2s$, as conjectured in Mouhot–Strain. It will be observed that this fundamental equation, derived by both Boltzmann and Maxwell, grants a basic example where a range of geometric fractional derivatives occur in a physical model of the natural world. Our methods provide a new understanding of the grazing collisions in the Boltzmann theory.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2784329,
+  author    = {Gressman, Philip T. and Strain, Robert M.},
+  title     = {Global classical solutions of the {B}oltzmann equation without angular cut-off},
+  journal   = {J. Amer. Math. Soc.},
+  volume    = {24},
+  number    = {3},
+  pages     = {771--847},
+  year      = {2011},
+  doi       = {10.1090/S0894-0347-2011-00697-8},
+  eprint    = {1011.5441},
+  issn      = {0894-0347},
+  mrnumber  = {2784329},
+  zblnumber = {1248.35140}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR2807092" data-year="2011" data-keywords="Boltzmann equation|Kinetic Theory|non-cutoff"><span class="pub-authors">Philip T. Gressman and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1016/j.aim.2011.05.005">Sharp anisotropic estimates for the Boltzmann collision operator and its entropy production</a>. <span class="pub-venue"><span class="journal">Adv. Math.</span> <span class="vol">227</span> (2011), no. 6, 2349–2384.</span><span class="pub-links"> <a class="pub-link" href="preprints/gsNonCutEst.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/1007.1276" title="arXiv:1007.1276">arXiv</a> <a class="pub-link" href="https://doi.org/10.1016/j.aim.2011.05.005" title="doi:10.1016/j.aim.2011.05.005">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2807092" title="MR2807092 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>This article provides sharp constructive upper and lower bound estimates for the Boltzmann collision operator with the full range of physical non cut-off collision kernels ($\gamma &gt; -n$ and $s\in (0,1)$) in the trilinear $L^2(\mathbb{R}^n)$ energy $( \mathcal{Q}(g,f), f )$. These new estimates prove that, for a very general class of $g(v)$, the global diffusive behavior (on $f$) in the energy space is that of the geometric fractional derivative semi-norm identified in the linearized context in our earlier works. We further prove new global entropy production estimates with the same anisotropic semi-norm. This resolves the longstanding, widespread heuristic conjecture about the sharp diffusive nature of the non cut-off Boltzmann collision operator in the energy space $L^2(\mathbb{R}^n)$.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2807092,
+  author    = {Gressman, Philip T. and Strain, Robert M.},
+  title     = {Sharp anisotropic estimates for the {B}oltzmann collision operator and its entropy production},
+  journal   = {Adv. Math.},
+  volume    = {227},
+  number    = {6},
+  pages     = {2349--2384},
+  year      = {2011},
+  doi       = {10.1016/j.aim.2011.05.005},
+  eprint    = {1007.1276},
+  issn      = {0001-8708},
+  mrnumber  = {2807092},
+  zblnumber = {1234.35173}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR2793935" data-year="2011" data-keywords="Boltzmann equation|relativistic Boltzmann equation|Kinetic Theory|relativistic Kinetic Theory|Fluid mechanics"><span class="pub-authors">Jared Speck and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1007/s00220-011-1207-z">Hilbert expansion from the Boltzmann equation to relativistic fluids</a>. <span class="pub-venue"><span class="journal">Comm. Math. Phys.</span> <span class="vol">304</span> (2011), no. 1, 229–280.</span><span class="pub-links"> <a class="pub-link" href="preprints/ssHilbertExp.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/1009.5033" title="arXiv:1009.5033">arXiv</a> <a class="pub-link" href="https://doi.org/10.1007/s00220-011-1207-z" title="doi:10.1007/s00220-011-1207-z">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2793935" title="MR2793935 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>We study the local-in-time hydrodynamic limit of the relativistic Boltzmann equation using a Hilbert expansion. More specifically, we prove the existence of local solutions to the relativistic Boltzmann equation that are nearby the local relativistic Maxwellian constructed from a class of solutions to the relativistic Euler equations that includes a large subclass of near-constant, non-vacuum fluid states. In particular, for small Knudsen number, these solutions to the relativistic Boltzmann equation have dynamics that are effectively captured by corresponding solutions to the relativistic Euler equations.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2793935,
+  author    = {Speck, Jared and Strain, Robert M.},
+  title     = {Hilbert expansion from the {B}oltzmann equation to relativistic fluids},
+  journal   = {Comm. Math. Phys.},
+  volume    = {304},
+  number    = {1},
+  pages     = {229--280},
+  year      = {2011},
+  doi       = {10.1007/s00220-011-1207-z},
+  eprint    = {1009.5033},
+  issn      = {0010-3616},
+  mrnumber  = {2793935},
+  zblnumber = {1221.35271}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR2765751" data-year="2011" data-keywords="Boltzmann equation|relativistic Boltzmann equation|Kinetic Theory|relativistic Kinetic Theory"><span class="pub-authors"><span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.3934/krm.2011.4.345">Coordinates in the relativistic Boltzmann theory</a>. <span class="pub-venue"><span class="journal">Kinet. Relat. Models</span> <span class="vol">4</span> (2011), no. 1, 345–359.</span><span class="pub-links"> <a class="pub-link" href="preprints/sCCkrm.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/1011.5093" title="arXiv:1011.5093">arXiv</a> <a class="pub-link" href="https://doi.org/10.3934/krm.2011.4.345" title="doi:10.3934/krm.2011.4.345">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2765751" title="MR2765751 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>It is often the case in mathematical analysis that solving an open problem can be facilitated by finding a new set of coordinates which may illuminate the known difficulties. In this article, we illustrate how to derive an assortment coordinates in which to represent the relativistic Boltzmann collision operator. We show the equivalence between some known representations, and others which seem to be new. One of these representations has been used recently to solve several open problems.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2765751,
+  author    = {Strain, Robert M.},
+  title     = {Coordinates in the relativistic {B}oltzmann theory},
+  journal   = {Kinet. Relat. Models},
+  volume    = {4},
+  number    = {1},
+  pages     = {345--359},
+  year      = {2011},
+  doi       = {10.3934/krm.2011.4.345},
+  eprint    = {1011.5093},
+  issn      = {1937-5093},
+  mrnumber  = {2765751},
+  zblnumber = {05869610}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2010</summary><ul class="pub-items">
+<li class="pub" id="pub-MR2629879" data-year="2010" data-keywords="Boltzmann equation|Kinetic Theory|non-cutoff"><span class="pub-authors">Philip T. Gressman and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1073/pnas.1001185107">Global classical solutions of the Boltzmann equation with long-range interactions</a>. <span class="pub-venue"><span class="journal">Proc. Natl. Acad. Sci. USA</span> <span class="vol">107</span> (2010), no. 13, 5744–5749.</span><span class="pub-links"> <a class="pub-link" href="preprints/gsPNAS2010.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://doi.org/10.1073/pnas.1001185107" title="doi:10.1073/pnas.1001185107">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2629879" title="MR2629879 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>This is a brief announcement of our recent proof of global existence and rapid decay to equilibrium of classical solutions to the Boltzmann equation without any angular cutoff, that is, for long-range interactions. We consider perturbations of the Maxwellian equilibrium states and include the physical cross-sections arising from an inverse-power intermolecular potential $r^{-(p-1)}$ with $p &gt; 2$, and more generally. We present here a mathematical framework for unique global in time solutions for all of these potentials. We consider it remarkable that this equation, derived by Boltzmann (1) in 1872 and Maxwell (2) in 1867, grants a basic example where a range of geometric fractional derivatives occur in a physical model of the natural world. Our methods provide a new understanding of the effects due to grazing collisions.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2629879,
+  author    = {Gressman, Philip T. and Strain, Robert M.},
+  title     = {Global classical solutions of the {B}oltzmann equation with long-range interactions},
+  journal   = {Proc. Natl. Acad. Sci. USA},
+  volume    = {107},
+  number    = {13},
+  pages     = {5744--5749},
+  year      = {2010},
+  doi       = {10.1073/pnas.1001185107},
+  issn      = {1091-6490},
+  mrnumber  = {2629879},
+  zblnumber = {1205.82120}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR2679588" data-year="2010" data-keywords="Boltzmann equation|relativistic Boltzmann equation|Kinetic Theory|relativistic Kinetic Theory"><span class="pub-authors"><span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1137/090762695">Global Newtonian limit for the relativistic Boltzmann equation near vacuum</a>. <span class="pub-venue"><span class="journal">SIAM J. Math. Anal.</span> <span class="vol">42</span> (2010), no. 4, 1568–1601.</span><span class="pub-links"> <a class="pub-link" href="preprints/rBnewt.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/1004.5407" title="arXiv:1004.5407">arXiv</a> <a class="pub-link" href="https://doi.org/10.1137/090762695" title="doi:10.1137/090762695">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2679588" title="MR2679588 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>We study the Cauchy Problem for the relativistic Boltzmann equation with near Vacuum initial data. Unique global in time mild solutions are obtained uniformly in the speed of light parameter $c \ge 1$. We furthermore prove that solutions to the relativistic Boltzmann equation converge to solutions of the Newtonian Boltzmann equation in the limit as $c\to\infty$ on arbitrary time intervals $[0,T]$, with convergence rate $1/c^{2-\epsilon}$ for any $\epsilon \in(0,2)$. This may be the first proof of unique global in time validity of the Newtonian limit for a Kinetic equation.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2679588,
+  author    = {Strain, Robert M.},
+  title     = {Global {N}ewtonian limit for the relativistic {B}oltzmann equation near vacuum},
+  journal   = {SIAM J. Math. Anal.},
+  volume    = {42},
+  number    = {4},
+  pages     = {1568--1601},
+  year      = {2010},
+  doi       = {10.1137/090762695},
+  eprint    = {1004.5407},
+  issn      = {0036-1410},
+  mrnumber  = {2679588},
+  zblnumber = {05894999}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR2728733" data-year="2010" data-keywords="Boltzmann equation|relativistic Boltzmann equation|Kinetic Theory|relativistic Kinetic Theory"><span class="pub-authors"><span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1007/s00220-010-1129-1">Asymptotic stability of the relativistic Boltzmann equation for the soft potentials</a>. <span class="pub-venue"><span class="journal">Comm. Math. Phys.</span> <span class="vol">300</span> (2010), no. 2, 529–597.</span><span class="pub-links"> <a class="pub-link" href="preprints/sRBsoft.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/1003.4893" title="arXiv:1003.4893">arXiv</a> <a class="pub-link" href="https://doi.org/10.1007/s00220-010-1129-1" title="doi:10.1007/s00220-010-1129-1">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2728733" title="MR2728733 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In this paper it is shown that unique solutions to the relativistic Boltzmann equation exist for all time and decay with any polynomial rate towards their steady state relativistic Maxwellian provided that the initial data starts out sufficiently close in $L^\infty_\ell$. If the initial data are continuous then so is the corresponding solution. We work in the case of a spatially periodic box. Conditions on the collision kernel are generic; this resolves the open question of global existence for the soft potentials.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2728733,
+  author    = {Strain, Robert M.},
+  title     = {Asymptotic stability of the relativistic {B}oltzmann equation for the soft potentials},
+  journal   = {Comm. Math. Phys.},
+  volume    = {300},
+  number    = {2},
+  pages     = {529--597},
+  year      = {2010},
+  doi       = {10.1007/s00220-010-1129-1},
+  eprint    = {1003.4893},
+  issn      = {0010-3616},
+  mrnumber  = {2728733},
+  zblnumber = {1214.35072}
+}</pre></details></div></li>
+<li class="pub" id="pub-Arnold2010" data-year="2010" data-keywords="Boltzmann equation|Kinetic Theory|non-cutoff"><span class="pub-authors"><span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.4171/owr/2010/54">Around the Boltzmann equation without angular cut-off</a>. <span class="pub-venue"><span class="journal">Oberwolfach Rep.</span> <span class="vol">7</span> (2010), no. 4, 3159–3236.</span><span class="pub-links"> <a class="pub-link" href="preprints/rms2010ow.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://doi.org/10.4171/owr/2010/54" title="doi:10.4171/owr/2010/54">DOI</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In this report, we will describe briefly several recent developments for the Boltzmann equation without the Grad angular cut-off assumption.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{Arnold2010,
+  author    = {Robert M. Strain},
+  title     = {Around the {B}oltzmann equation without angular cut-off},
+  journal   = {{Oberwolfach Rep.}},
+  booktitle = {{Classical and quantum mechanical models of many-particle systems. Workshop held December 5 -- December 11, 2010.}},
+  editor    = {Anton {Arnold} and Eric A. {Carlen} and Laurent {Desvillettes}},
+  volume    = {7},
+  number    = {4},
+  pages     = {3159--3236},
+  year      = {2010},
+  publisher = {European Mathematical Society (EMS) Publishing House, Zurich; Mathematisches Forschungsinstitut Oberwolfach, Oberwolfach},
+  doi       = {10.4171/owr/2010/54},
+  issn      = {1660-8933; 1660-8941/e},
+  zblnumber = {1235.00027}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2009</summary><ul class="pub-items">
+<li class="pub" id="pub-MR2512859" data-year="2009" data-keywords="Navier-Stokes equations|Fluid mechanics"><span class="pub-authors">Chiun-Chuan Chen, <span class="me">Robert M. Strain</span>, Tai-Peng Tsai, and Horng-Tzer Yau.</span> <a class="pub-title" href="https://doi.org/10.1080/03605300902793956">Lower bounds on the blow-up rate of the axisymmetric Navier-Stokes equations. II</a>. <span class="pub-venue"><span class="journal">Comm. Partial Differential Equations</span> <span class="vol">34</span> (2009), no. 1-3, 203–232.</span><span class="pub-links"> <a class="pub-link" href="preprints/2009ChenStrainTsaiYau.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/0709.4230" title="arXiv:0709.4230">arXiv</a> <a class="pub-link" href="https://doi.org/10.1080/03605300902793956" title="doi:10.1080/03605300902793956">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2512859" title="MR2512859 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>Consider axisymmetric strong solutions of the incompressible Navier–Stokes equations in $\mathbb{R}^3$ with non-trivial swirl. Let $z$ denote the axis of symmetry and $r$ measure the distance to the $z$-axis. Suppose the solution satisfies,for some $0 \le \varepsilon \le 1$ that $|v (x,t)| \le C_* r^{-1+\varepsilon } |t|^{-\varepsilon /2}$ for $-T_0\le t &lt; 0$ and a positive finite constant $C_*$ which is allowed to be large, we then prove that $v$ is regular at time zero.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2512859,
+  author    = {Chen, Chiun-Chuan and Strain, Robert M. and Tsai, Tai-Peng and Yau, Horng-Tzer},
+  title     = {Lower bounds on the blow-up rate of the axisymmetric {N}avier-{S}tokes equations. {II}},
+  journal   = {Comm. Partial Differential Equations},
+  volume    = {34},
+  number    = {1-3},
+  pages     = {203--232},
+  year      = {2009},
+  doi       = {10.1080/03605300902793956},
+  eprint    = {0709.4230},
+  issn      = {0360-5302},
+  mrnumber  = {2512859},
+  zblnumber = {1173.35095}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2008</summary><ul class="pub-items">
+<li class="pub" id="pub-MR2429247" data-year="2008" data-keywords="Navier-Stokes equations|Fluid mechanics"><span class="pub-authors">Chiun-Chuan Chen, <span class="me">Robert M. Strain</span>, Horng-Tzer Yau, and Tai-Peng Tsai.</span> <a class="pub-title" href="https://doi.org/10.1093/imrn/rnn016">Lower bound on the blow-up rate of the axisymmetric Navier-Stokes equations</a>. <span class="pub-venue"><span class="journal">Int. Math. Res. Not. IMRN</span> (2008), no. 9, Art. ID rnn016, 31.</span><span class="pub-links"> <a class="pub-link" href="preprints/2008rnn016.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/math/0701796" title="arXiv:math/0701796">arXiv</a> <a class="pub-link" href="https://doi.org/10.1093/imrn/rnn016" title="doi:10.1093/imrn/rnn016">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2429247" title="MR2429247 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>Consider axisymmetric strong solutions of the incompressible Navier–Stokes equations in $R^3$ with non-trivial swirl. Such solutions are not known to be globally defined, but it is shown by Caffarelli–Kohn–Nirenberg in 1982 that they could only blow up on the axis of symmetry. Let $z$ denote the axis of symmetry and $r$ measure the distance to the $z$-axis. Suppose the solution satisfies the pointwise scale invariant bound $|v (x,t)| \le C_*{(r^2 -t)^{-1/2}} $ for $-T_0\le t &lt; 0$ and a positive finite constant $C_*$ which is allowed to be large, we then prove that $v$ is regular at time zero.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2429247,
+  author    = {Chen, Chiun-Chuan and Strain, Robert M. and Yau, Horng-Tzer and Tsai, Tai-Peng},
+  title     = {Lower bound on the blow-up rate of the axisymmetric {N}avier-{S}tokes equations},
+  journal   = {Int. Math. Res. Not. IMRN},
+  number    = {9},
+  pages     = {Art. ID rnn016, 31},
+  year      = {2008},
+  doi       = {10.1093/imrn/rnn016},
+  eprint    = {math/0701796},
+  issn      = {1073-7928},
+  mrnumber  = {2429247},
+  zblnumber = {1154.35068}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR2366140" data-year="2008" data-keywords="Boltzmann equation|Landau equation|Kinetic Theory"><span class="pub-authors"><span class="me">Robert M. Strain</span> and Yan Guo.</span> <a class="pub-title" href="https://doi.org/10.1007/s00205-007-0067-3">Exponential decay for soft potentials near Maxwellian</a>. <span class="pub-venue"><span class="journal">Arch. Ration. Mech. Anal.</span> <span class="vol">187</span> (2008), no. 2, 287–339.</span><span class="pub-links"> <a class="pub-link" href="preprints/2005SGed.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://doi.org/10.1007/s00205-007-0067-3" title="doi:10.1007/s00205-007-0067-3">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2366140" title="MR2366140 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>Consider both soft potentials with angular cutoff and Landau collision kernels in the Boltzmann theory inside a periodic box. We prove that any smooth perturbation near a given Maxwellian approaches to zero at the rate of $e^{-\lambda t^{p}}$ for some $\lambda &gt;0$ and $p\in (0,1)$. Our method is based on an unified energy estimate with appropriate exponential velocity weight. Our results extend the classical Caflisch 1980 result to the case of very soft potential and Coulomb interactions.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2366140,
+  author    = {Strain, Robert M. and Guo, Yan},
+  title     = {Exponential decay for soft potentials near {M}axwellian},
+  journal   = {Arch. Ration. Mech. Anal.},
+  volume    = {187},
+  number    = {2},
+  pages     = {287--339},
+  year      = {2008},
+  doi       = {10.1007/s00205-007-0067-3},
+  issn      = {0003-9527},
+  mrnumber  = {2366140},
+  zblnumber = {1130.76069}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2007</summary><ul class="pub-items">
+<li class="pub" id="pub-MR2322149" data-year="2007" data-keywords="Boltzmann equation|Landau equation|Kinetic Theory|non-cutoff"><span class="pub-authors">Clément Mouhot and <span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1016/j.matpur.2007.03.003">Spectral gap and coercivity estimates for linearized Boltzmann collision operators without angular cutoff</a>. <span class="pub-venue"><span class="journal">J. Math. Pures Appl. (9)</span> <span class="vol">87</span> (2007), no. 5, 515–535.</span><span class="pub-links"> <a class="pub-link" href="preprints/2007mouhotStrain.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/math/0607495" title="arXiv:math/0607495">arXiv</a> <a class="pub-link" href="https://doi.org/10.1016/j.matpur.2007.03.003" title="doi:10.1016/j.matpur.2007.03.003">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2322149" title="MR2322149 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>In this paper we prove new constructive coercivity estimates for the Boltzmann collision operator without cutoff, that is for <i>long-range</i> interactions. In particular we give a generalized sufficient condition for the existence of a spectral gap which involves both the growth behavior of the collision kernel at large relative velocities and its singular behavior at grazing and frontal collisions. It provides in particular existence of a spectral gap and estimates on it for interactions deriving from the hard potentials $\phi(r)=r^{-(s-1)}$, $s \ge 5$ or the so-called moderately soft potentials $\phi(r)=r^{-(s-1)}$, $3&lt; s &lt; 5$, (without angular cutoff). In particular this paper recovers (by constructive means), improves and extends previous results of Pao 1974. We also obtain constructive coercivity estimates for the Landau collision operator for the optimal coercivity norm pointed out in Guo 2002 and we formulate a conjecture about a unified necessary and sufficient condition for the existence of a spectral gap for Boltzmann and Landau linearized collision operators.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2322149,
+  author    = {Mouhot, Cl{\&#x27;{e}}ment and Strain, Robert M.},
+  title     = {Spectral gap and coercivity estimates for linearized {B}oltzmann collision operators without angular cutoff},
+  journal   = {J. Math. Pures Appl. (9)},
+  volume    = {87},
+  number    = {5},
+  pages     = {515--535},
+  year      = {2007},
+  doi       = {10.1016/j.matpur.2007.03.003},
+  eprint    = {math/0607495},
+  issn      = {0021-7824},
+  mrnumber  = {2322149},
+  zblnumber = {1388.76338}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR2372479" data-year="2007" data-keywords="Kinetic Theory|Balescu-Lenard equation"><span class="pub-authors"><span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1080/03605300601088609">On the linearized Balescu-Lenard equation</a>. <span class="pub-venue"><span class="journal">Comm. Partial Differential Equations</span> <span class="vol">32</span> (2007), no. 10-12, 1551–1586.</span><span class="pub-links"> <a class="pub-link" href="preprints/2007BalescuLenard.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/math/0603490" title="arXiv:math/0603490">arXiv</a> <a class="pub-link" href="https://doi.org/10.1080/03605300601088609" title="doi:10.1080/03605300601088609">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2372479" title="MR2372479 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>The Balescu–Lenard equation from plasma physics is widely considered to include a highly accurate correction to Landau’s fundamental collision operator. Yet so far it has seen very little mathematical study. We perform an extensive linearized analysis of this equation, which includes determining the asymptotic behavior of the new components of the linearized operator and establishing time decay rates for the linearized equation.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2372479,
+  author    = {Strain, Robert M.},
+  title     = {On the linearized {B}alescu-{L}enard equation},
+  journal   = {Comm. Partial Differential Equations},
+  volume    = {32},
+  number    = {10-12},
+  pages     = {1551--1586},
+  year      = {2007},
+  doi       = {10.1080/03605300601088609},
+  eprint    = {math/0603490},
+  issn      = {0360-5302},
+  mrnumber  = {2372479},
+  zblnumber = {1128.76068}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2006</summary><ul class="pub-items">
+<li class="pub" id="pub-MR2209761" data-year="2006" data-keywords="Boltzmann equation|Landau equation|relativistic Landau equation|Kinetic Theory|relativistic Kinetic Theory|Vlasov-Maxwell systems"><span class="pub-authors"><span class="me">Robert M. Strain</span> and Yan Guo.</span> <a class="pub-title" href="https://doi.org/10.1080/03605300500361545">Almost exponential decay near Maxwellian</a>. <span class="pub-venue"><span class="journal">Comm. Partial Differential Equations</span> <span class="vol">31</span> (2006), no. 1-3, 417–429.</span><span class="pub-links"> <a class="pub-link" href="preprints/2005SGaed.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://doi.org/10.1080/03605300500361545" title="doi:10.1080/03605300500361545">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2209761" title="MR2209761 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>By direct interpolation of a family of smooth energy estimates for solutions near Maxwellian equilibrium and in a periodic box to several Boltzmann type equations, we show convergence to Maxwellian with any polynomial rate in time. Our results not only resolve the important open problem for both the Vlasov–Maxwell–Boltzmann system and the relativistic Landau–Maxwell system for charged particles, but also lead to a simpler alternative proof of recent decay results for soft potentials as well as the Coulombic interaction, with precise decay rate depending on the initial conditions.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2209761,
+  author    = {Strain, Robert M. and Guo, Yan},
+  title     = {Almost exponential decay near {M}axwellian},
+  journal   = {Comm. Partial Differential Equations},
+  volume    = {31},
+  number    = {1-3},
+  pages     = {417--429},
+  year      = {2006},
+  doi       = {10.1080/03605300500361545},
+  issn      = {0360-5302},
+  mrnumber  = {2209761},
+  zblnumber = {1096.82010}
+}</pre></details></div></li>
+<li class="pub" id="pub-MR2259206" data-year="2006" data-keywords="Boltzmann equation|Kinetic Theory|Vlasov-Maxwell systems"><span class="pub-authors"><span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.1007/s00220-006-0109-y">The Vlasov-Maxwell-Boltzmann system in the whole space</a>. <span class="pub-venue"><span class="journal">Comm. Math. Phys.</span> <span class="vol">268</span> (2006), no. 2, 543–567.</span><span class="pub-links"> <a class="pub-link" href="preprints/2005Sws.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://arxiv.org/abs/math/0512002" title="arXiv:math/0512002">arXiv</a> <a class="pub-link" href="https://doi.org/10.1007/s00220-006-0109-y" title="doi:10.1007/s00220-006-0109-y">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2259206" title="MR2259206 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>The Vlasov–Maxwell–Boltzmann system is a fundamental model to describe the dynamics of dilute charged particles, where particles interact via collisions and through their self-consistent electromagnetic field. We prove the existence of global in time classical solutions to the Cauchy problem near Maxwellians.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2259206,
+  author    = {Strain, Robert M.},
+  title     = {The {V}lasov-{M}axwell-{B}oltzmann system in the whole space},
+  journal   = {Comm. Math. Phys.},
+  volume    = {268},
+  number    = {2},
+  pages     = {543--567},
+  year      = {2006},
+  doi       = {10.1007/s00220-006-0109-y},
+  eprint    = {math/0512002},
+  issn      = {0010-3616},
+  mrnumber  = {2259206},
+  zblnumber = {1129.35022}
+}</pre></details></div></li>
+<li class="pub" id="pub-Arnold2006" data-year="2006" data-keywords="Boltzmann equation|Landau equation|relativistic Landau equation|Kinetic Theory|relativistic Kinetic Theory"><span class="pub-authors"><span class="me">Robert M. Strain</span>.</span> <a class="pub-title" href="https://doi.org/10.4171/owr/2006/54">Recent results on existence, uniqueness and asymptotic decay rates for collisional kinetic models</a>. <span class="pub-venue"><span class="journal">Oberwolfach Rep.</span> <span class="vol">3</span> (2006), no. 4, 3189–3258.</span><span class="pub-links"> <a class="pub-link" href="preprints/rms2006ow.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://doi.org/10.4171/owr/2006/54" title="doi:10.4171/owr/2006/54">DOI</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>We discuss recent work proving exponential time decay rates to equilibrium for Boltzmann equations such as the soft potentials, Landau’s equation and the lin- earized Balescu–Lenard model. We also mention a proof of existence and unique- ness of solutions near Maxwellian to the Vlasov–Maxwell–Boltzmann system in the whole space. Some of these projects are joint work with Yan Guo.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{Arnold2006,
+  author    = {Robert M. Strain},
+  title     = {{R}ecent results on existence, uniqueness and asymptotic decay rates for collisional kinetic models},
+  journal   = {{Oberwolfach Rep.}},
+  booktitle = {{Classical and quantum mechanical models of many-particle systems. Workshop held December 3--9, 2006.}},
+  editor    = {Anton {Arnold} and Carlo {Cercignani} and Laurent {Desvillettes}},
+  volume    = {3},
+  number    = {4},
+  pages     = {3189--3258},
+  year      = {2006},
+  publisher = {European Mathematical Society (EMS) Publishing House, Zurich; Mathematisches Forschungsinstitut Oberwolfach, Oberwolfach},
+  doi       = {10.4171/owr/2006/54},
+  issn      = {1660-8933; 1660-8941/e},
+  zblnumber = {1177.82057}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2005</summary><ul class="pub-items">
+<li class="pub" id="pub-MR2707256" data-year="2005" data-keywords="Boltzmann equation|Landau equation|Balescu-Lenard equation|Kinetic Theory|Vlasov-Maxwell systems|relativistic Kinetic Theory"><span class="pub-authors"><span class="me">Robert M. Strain</span>.</span> <span class="pub-title">Some applications of an energy method in collisional Kinetic theory</span>. <span class="pub-venue">PhD thesis, Brown University (2005).</span><span class="pub-links"> <a class="pub-link" href="preprints/2005PHDthesisS.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="http://gateway.proquest.com/openurl?url_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:dissertation&amp;res_dat=xri:pqdiss&amp;rft_dat=xri:pqdiss:3174679" title="ProQuest">ProQuest</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2707256" title="MR2707256 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>The collisional Kinetic Equations we study are all of the form $$\partial_t F + v\cdot \nabla_x F+V(t,x)\cdot \nabla_v F=Q(F,F).$$ Here $F=F(t,x,v)$ is a probabilistic density function (of time $t\ge 0$, space $x\in\Omega$ and velocity $v\in\mathbb{R}^3$) for a particle taken chosen randomly from a gas or plasma. $V(t,x)$ is a field term which usually represents Maxwell’s theory of electricity and magnetism, sometimes this term is neglected. $Q(F,F)$ is the collision operator which models the interaction between colliding particles. We consider both the Boltzmann and Landau collision operators.</p><p>We prove existence, uniqueness and regularity of close to equilibrium solutions to the relativistic Landau–Maxwell system in the first part of this thesis. Our main tool is an energy method.</p><p>In the second part, we prove arbitrarily high polynomial time decay rates to equilibrium for four kinetic equations. These are cutoff soft potential Boltzmann and Landau equations, but also the Vlasov–Maxwell–Boltzmann system and the relativistic Landau–Maxwell system. The main technique used here is interpolation.</p><p>In the third part, we prove exponential decay for the cutoff soft potential Boltzmann and Landau equations. The main point here is to show that exponential decay of the initial data is propagated by a solution.</p><p>In the fourth and final part of this thesis, we write down a few important calculations in the relativistic Boltzmann theory which are scattered around the literature. We also calculate a few Lorentz transformations which maybe useful in relativistic transport theory. We use these calculations to comment about extending the results in this thesis to the relativistic Boltzmann equation.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@phdthesis{MR2707256,
+  author    = {Strain, Robert M.},
+  title     = {Some applications of an energy method in collisional {K}inetic theory},
+  journal   = {ProQuest Dissertations and Theses},
+  pages     = {1--200},
+  year      = {2005},
+  publisher = {ProQuest LLC, Ann Arbor, MI},
+  school    = {Brown University},
+  isbn      = {978-0542-12875-2},
+  mrnumber  = {2707256}
+}</pre></details></div></li>
+</ul></details>
+<details class="pub-group" open><summary>2004</summary><ul class="pub-items">
+<li class="pub" id="pub-MR2100057" data-year="2004" data-keywords="Landau equation|relativistic Landau equation|Kinetic Theory|relativistic Kinetic Theory|Vlasov-Maxwell systems"><span class="pub-authors"><span class="me">Robert M. Strain</span> and Yan Guo.</span> <a class="pub-title" href="https://doi.org/10.1007/s00220-004-1151-2">Stability of the relativistic Maxwellian in a collisional plasma</a>. <span class="pub-venue"><span class="journal">Comm. Math. Phys.</span> <span class="vol">251</span> (2004), no. 2, 263–320.</span><span class="pub-links"> <a class="pub-link" href="preprints/2004SG.pdf" title="Preprint PDF">PDF</a> <a class="pub-link" href="https://doi.org/10.1007/s00220-004-1151-2" title="doi:10.1007/s00220-004-1151-2">DOI</a> <a class="pub-link" href="https://mathscinet.ams.org/mathscinet-getitem?mr=2100057" title="MR2100057 (subscription)">MathSciNet</a></span><div class="pub-extras"><details class="pub-more"><summary>abstract</summary><div class="pub-abstract"><p>The relativistic Landau–Maxwell system is among the most fundamental and complete models for describing the dynamics of a dilute collisional plasma in which particles interact through Coulombic collisions and through their self-consistent electromagnetic field. We construct the first global in time classical solutions. Our solutions are constructed in a periodic box and near the relativistic Maxwellian, the Jüttner solution.</p></div></details><details class="pub-more"><summary>bibtex</summary><pre class="pub-bibtex">@article{MR2100057,
+  author    = {Strain, Robert M. and Guo, Yan},
+  title     = {Stability of the relativistic {M}axwellian in a collisional plasma},
+  journal   = {Comm. Math. Phys.},
+  volume    = {251},
+  number    = {2},
+  pages     = {263--320},
+  year      = {2004},
+  doi       = {10.1007/s00220-004-1151-2},
+  issn      = {0010-3616},
+  mrnumber  = {2100057},
+  zblnumber = {1113.82070}
+}</pre></details></div></li>
+</ul></details>
 </div>
+<!-- PUBLICATIONS:END -->
+      </div>
+    </div>
 
+    <!-- Vita and bibliography -->
+    <div class="w3-container w3-theme-d3 w3-margin-bottom" id="pdfDOCS">
+      <ul class="w3-ul">
+        <li class="w3-padding-16"><span class="w3-large"><a class="light-link" href="cvSTRAIN.pdf"><i class="fa fa-file-pdf-o fa-fw w3-margin-right"></i>Curriculum Vitae</a></span></li>
+        <li class="w3-padding-16"><span class="w3-large"><a class="light-link" href="cvSTRAINshort.pdf"><i class="fa fa-file-pdf-o fa-fw w3-margin-right"></i>Short Vitae</a></span></li>
+        <li class="w3-padding-16"><span class="w3-large"><a class="light-link" href="bibSTRAIN.pdf"><i class="fa fa-file-pdf-o fa-fw w3-margin-right"></i>Bibliography</a></span></li>
+        <li class="w3-padding-16"><span class="w3-large"><a class="light-link" href="bibSTRAINabs.pdf"><i class="fa fa-file-pdf-o fa-fw w3-margin-right"></i>Bibliography (with abstracts)</a></span></li>
+      </ul>
+    </div>
 
-
-
-    <!-- entry -->
+    <!-- Online lecture videos -->
     <div class="w3-container w3-margin-bottom w3-theme-d3">
-        <div class="w3-container w3-theme-l5">
-            <h3 class="w3-center w3-xxlarge" align="center"><p><b>Online lecture videos</b></p></h3>
-          </div>
-        <div class="w3-container w3-large">
-
-          <ul class="w3-ul">
-            <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=A_LPyILl9uQ">
-              Global mild solutions of the Landau and non cutoff Boltzmann equation</a> (Workshop on Effective equations: frontiers in classical and quantum systems,
-              Hausdorff Research Institute for Mathematics (HIM), June 27, 2019)</b>
-
-            <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=tnONtM6qQZQ">
-            On the Vlasov-Maxwell System in the Whole Space, Part 1 of 3</a> (Mini course, <a class="light-link" href="https://indico.math.cnrs.fr/event/873/">Nonlinear Waves 2016 Summer School</a>,  Institut des Hautes Etudes Scientifiques (IHES), July 25, 2016)</b>
-
-            <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=iv1Lbut0mqA">
-            On the Vlasov-Maxwell System in the Whole Space, Part 2 of 3</a> (Mini course, <a class="light-link" href="https://indico.math.cnrs.fr/event/873/">Nonlinear Waves 2016 Summer School</a>,  Institut des Hautes Etudes Scientifiques (IHES), July 26, 2016)</b>
-
-            <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=EychimnMBqs">
-            On the Vlasov-Maxwell System in the Whole Space, Part 3 of 3</a> (Mini course, <a class="light-link" href="https://indico.math.cnrs.fr/event/873/">Nonlinear Waves 2016 Summer School</a>, Institut des Hautes Etudes Scientifiques (IHES), July 27, 2016).  <a class="light-link" href="https://www.youtube.com/playlist?list=PLx5f8IelFRgGPY9Sphzwl4N-xkFNyJW34">Youtube link to the entire conference.</a></b>
-
-            <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=kPaDdk7E168">
-            On the Boltzmann equation without angular cut-off</a> (Seminar talk, Institute for Advanced Study, March 18, 2014)
-          </b></li>
-
-            <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=f-eD-uXe0QY">
-            Global solutions to a non-local diffusion equation with quadratic non-linearity</a> (Conference on Kinetic Theory and Related Fields, POSTECH, June 23, 2011)</b></li>
-
-            <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=A2gbDHU8TEo">
-            On the Boltzmann Equation without Angular Cut-Off Part I of III</a> (Intensive Lecture Series on PDE's, Conference on Kinetic Theory and Related Fields, POSTECH, June 20, 2011)</b></li>
-
-            <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=p4_BfmJfqYQ">
-            On the Boltzmann Equation without Angular Cut-Off Part II of III</a> (Intensive Lecture Series on PDE's, Conference on Kinetic Theory and Related Fields, POSTECH, June 20, 2011)</b></li>
-
-            <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=iw-Y5cdDiVI">
-            On the Boltzmann Equation, Part III of III: Optimal large-time decay rates</a> (Intensive Lecture Series on PDE's, Conference on Kinetic Theory and Related Fields, POSTECH, June 21, 2011)</b></li>
-          </ul>
-
-          </div>
-
-          <!-- end videos entry -->
+      <div class="w3-container w3-theme-l5">
+        <h3 class="w3-center w3-xxlarge"><b>Online lecture videos</b></h3>
       </div>
-
-
-
-
-
-
-
-    <!-- entry RESEARCH SUPPORT ACKNOWLEDGEMENT -->
-    <div class="w3-card w3-theme-l5 w3-margin">
-        <div class="w3-container w3-padding w3-theme-d1">
-          <h3 align="center">Research support acknowledgment</h3>
-        </div>
-        <ul class="w3-ul w3-hoverable">
-        
-          <li class="w3-padding-16"><a href="http://www.nsf.gov/">National Science Foundation</a>: <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=2408264">DMS-2408264</a> (2024-2027)</li>
-        
-          <li class="w3-padding-16"><a href="http://www.nsf.gov/">National Science Foundation</a>: <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=2055271">DMS-2055271</a> (2021-2025)</li>
-        
-          <li class="w3-padding-16"><a href="http://www.nsf.gov/">National Science Foundation</a>: <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1764177">DMS-1764177</a> (2018-2022)</li>
-        
-        <li class="w3-padding-16"><a href="http://www.nsf.gov/">National Science Foundation</a>: <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1500916">DMS-1500916</a> (2015-2019)</li>
-        
-        <li class="w3-padding-16"><a href="http://www.nsf.gov/">National Science Foundation</a>: <a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1200747">DMS-1200747</a>  (2012-2016)</li>
-        
-        <li class="w3-padding-16"><a href="http://www.sloan.org/fellowships/">Alfred P. Sloan Foundation</a>: Sloan Research Fellowship (2011-2013)</li>
-        
-          <li><a href="http://www.nsf.gov/">National Science Foundation</a>: <a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0901463">DMS-0901463</a> (2009-2013)</li>
-        
-        <li class="w3-padding-16"><a href="http://www.nsf.gov/">National Science Foundation</a>: <a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0602513">DMS-0602513</a> (2006-2010)</li>
-        
+      <div class="w3-container w3-large">
+        <ul class="w3-ul">
+          <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=A_LPyILl9uQ">Global mild solutions of the Landau and non cutoff Boltzmann equation</a> (Workshop on Effective equations: frontiers in classical and quantum systems, Hausdorff Research Institute for Mathematics (HIM), June 27, 2019)</b></li>
+          <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=tnONtM6qQZQ">On the Vlasov-Maxwell System in the Whole Space, Part 1 of 3</a> (Mini course, <a class="light-link" href="https://indico.math.cnrs.fr/event/873/">Nonlinear Waves 2016 Summer School</a>, Institut des Hautes Etudes Scientifiques (IHES), July 25, 2016)</b></li>
+          <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=iv1Lbut0mqA">On the Vlasov-Maxwell System in the Whole Space, Part 2 of 3</a> (Mini course, <a class="light-link" href="https://indico.math.cnrs.fr/event/873/">Nonlinear Waves 2016 Summer School</a>, Institut des Hautes Etudes Scientifiques (IHES), July 26, 2016)</b></li>
+          <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=EychimnMBqs">On the Vlasov-Maxwell System in the Whole Space, Part 3 of 3</a> (Mini course, <a class="light-link" href="https://indico.math.cnrs.fr/event/873/">Nonlinear Waves 2016 Summer School</a>, Institut des Hautes Etudes Scientifiques (IHES), July 27, 2016). <a class="light-link" href="https://www.youtube.com/playlist?list=PLx5f8IelFRgGPY9Sphzwl4N-xkFNyJW34">Youtube link to the entire conference.</a></b></li>
+          <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=kPaDdk7E168">On the Boltzmann equation without angular cut-off</a> (Seminar talk, Institute for Advanced Study, March 18, 2014)</b></li>
+          <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=f-eD-uXe0QY">Global solutions to a non-local diffusion equation with quadratic non-linearity</a> (Conference on Kinetic Theory and Related Fields, POSTECH, June 23, 2011)</b></li>
+          <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=A2gbDHU8TEo">On the Boltzmann Equation without Angular Cut-Off Part I of III</a> (Intensive Lecture Series on PDE's, Conference on Kinetic Theory and Related Fields, POSTECH, June 20, 2011)</b></li>
+          <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=p4_BfmJfqYQ">On the Boltzmann Equation without Angular Cut-Off Part II of III</a> (Intensive Lecture Series on PDE's, Conference on Kinetic Theory and Related Fields, POSTECH, June 20, 2011)</b></li>
+          <li class="w3-padding-16"><b><a class="light-link" href="https://www.youtube.com/watch?v=iw-Y5cdDiVI">On the Boltzmann Equation, Part III of III: Optimal large-time decay rates</a> (Intensive Lecture Series on PDE's, Conference on Kinetic Theory and Related Fields, POSTECH, June 21, 2011)</b></li>
         </ul>
       </div>
+    </div>
 
+    <!-- Research support acknowledgment -->
+    <div class="w3-card w3-theme-l5 w3-margin-bottom">
+      <div class="w3-container w3-padding w3-theme-d1">
+        <h3 class="w3-center">Research support acknowledgment</h3>
+      </div>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16"><a href="http://www.nsf.gov/">National Science Foundation</a>: <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=2408264">DMS-2408264</a> (2024-2027)</li>
+        <li class="w3-padding-16"><a href="http://www.nsf.gov/">National Science Foundation</a>: <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=2055271">DMS-2055271</a> (2021-2025)</li>
+        <li class="w3-padding-16"><a href="http://www.nsf.gov/">National Science Foundation</a>: <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1764177">DMS-1764177</a> (2018-2022)</li>
+        <li class="w3-padding-16"><a href="http://www.nsf.gov/">National Science Foundation</a>: <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1500916">DMS-1500916</a> (2015-2019)</li>
+        <li class="w3-padding-16"><a href="http://www.nsf.gov/">National Science Foundation</a>: <a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1200747">DMS-1200747</a> (2012-2016)</li>
+        <li class="w3-padding-16"><a href="http://www.sloan.org/fellowships/">Alfred P. Sloan Foundation</a>: Sloan Research Fellowship (2011-2013)</li>
+        <li class="w3-padding-16"><a href="http://www.nsf.gov/">National Science Foundation</a>: <a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0901463">DMS-0901463</a> (2009-2013)</li>
+        <li class="w3-padding-16"><a href="http://www.nsf.gov/">National Science Foundation</a>: <a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0602513">DMS-0602513</a> (2006-2010)</li>
+      </ul>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- END ENTRIES -->
+  </div>
 </div>
 
-
-<!-- END GRID -->
-</div><br>
-
-
-
-
-
-
-
-
-<!-- END w3-content -->
-</div>
-
-
 <!-- Footer -->
-<footer class="w3-container w3-theme-d4 w3-padding-64 w3-center w3-hide-small">
-
-    <!-- Grid that keeps the footer in the middle of the page -->
-    <div class="w3-content" id="footer">
-
-    <div class="w3-container">
-      <div class="w3-col m8" align="left">
-            <h3 class="block-title">Penn Mathematics Seminars</h3>
-              <ul>
-            <li style="list-style: none;"><a class="light-link" href="https://www.math.upenn.edu/events/">Events</a></li>
-             <li style="list-style: none;"><a class="light-link" href="https://www.math.upenn.edu/calendar/">Calendar</a></li>
-          <li style="list-style: none;"><a class="light-link" href="https://www.math.upenn.edu/events/seminars/analysis-seminar">Analysis</a></li> 
-             <li style="list-style: none;"><a class="light-link" href="https://www.math.upenn.edu/events/seminars/penn-mathematics-colloquium">Colloquium</a></li>
-      </ul>
-        <br>
-            <h3 class="block-title">Penn Library VPN Proxy Links</h3>
-             <ul>
-             <li style="list-style: none;"><a class="light-link" href="http://www.library.upenn.edu/" title="">Penn&#039;s Library</a></li>
-             <li style="list-style: none;"><a class="light-link" href="http://hdl.library.upenn.edu/1017/6975" title="">MathSciNet via Proxy</a></li>
-             <li style="list-style: none;"><a class="light-link" href="https://mathscinet.ams.org/mathscinet/" title="">MathSciNet</a></li>
-             <li style="list-style: none;"><a class="light-link" href="https://proxy.library.upenn.edu/login?&url=https://zbmath.org" title="">Zentralblatt via Proxy</a></li>
-             <li style="list-style: none;"><a class="light-link" href="https://zbmath.org" title="">Zentralblatt</a></li>
-             </ul>
-          </div>
-
-      <div class="w3-col m4" align="left">
+<footer class="w3-container w3-theme-d4 w3-padding-64">
+  <div class="w3-content" id="footer">
+    <div class="w3-row">
+      <div class="w3-col m8">
+        <h3 class="block-title">Penn Mathematics Seminars</h3>
+        <ul class="footer-list">
+          <li><a class="light-link" href="https://www.math.upenn.edu/events/">Events</a></li>
+          <li><a class="light-link" href="https://www.math.upenn.edu/calendar/">Calendar</a></li>
+          <li><a class="light-link" href="https://www.math.upenn.edu/events/seminars/analysis-seminar">Analysis</a></li>
+          <li><a class="light-link" href="https://www.math.upenn.edu/events/seminars/partial-differential-equations-seminar">PDE</a></li>
+          <li><a class="light-link" href="https://www.math.upenn.edu/events/seminars/penn-mathematics-colloquium">Colloquium</a></li>
+        </ul>
+        <h3 class="block-title">Penn Library VPN Proxy Links</h3>
+        <ul class="footer-list">
+          <li><a class="light-link" href="http://www.library.upenn.edu/">Penn's Library</a></li>
+          <li><a class="light-link" href="http://www.library.upenn.edu/proxy">Penn's Library via Proxy</a></li>
+          <li><a class="light-link" href="http://hdl.library.upenn.edu/1017/6975">MathSciNet via Proxy</a></li>
+          <li><a class="light-link" href="https://mathscinet.ams.org/mathscinet/">MathSciNet</a></li>
+          <li><a class="light-link" href="https://proxy.library.upenn.edu/login?&amp;url=https://zbmath.org">Zentralblatt via Proxy</a></li>
+          <li><a class="light-link" href="https://zbmath.org">Zentralblatt</a></li>
+        </ul>
+      </div>
+      <div class="w3-col m4">
         <h3 class="block-title">Contact Information</h3>
         <p>
-          &nbsp;  &nbsp; <a class="light-link" href="http://www.math.upenn.edu/">Department of Mathematics</a><br>
-          &nbsp;  &nbsp; <a class="light-link" href="http://www.upenn.edu/">University of Pennsylvania</a><br>
-          &nbsp;  &nbsp; <a class="light-link" href="https://en.wikipedia.org/wiki/David_Rittenhouse_Laboratory">David Rittenhouse Lab</a><br>
-          &nbsp;  &nbsp; 209 South 33rd Street <br>
-          &nbsp;  &nbsp; Philadelphia, PA 19104-6395 <br>
-          &nbsp;  &nbsp;  <a class="light-link" href="tel:12158984828"><i class="fa fa-phone">&nbsp;</i>(215) 898-4828</a><br>
-          &nbsp;  &nbsp; Office: DRL 3E5<br>
-          &nbsp;  &nbsp; <script language="" type="text/javascript">
-          <!--
-          emailE=('strain' + '@' + 'math.upenn' + '.edu')
-          document.write('<a class="light-link" title="Messages" href="mailto:' + emailE + '"><i class="fa fa-envelope-o">&nbsp;</i>' +  emailE + '</a>')
-
-           //-->
-          </script>
-        <br><br><br>
-        <a href="https://www.sas.upenn.edu">
-        <img src="images/SAS_logo_white.png" alt="PennSAS-Logo" style="width:100%;max-width:250px">
-      </a>
-  </div>
-
-
-
-  </div>
-  </div>
-  <br>
-
-  <div class="w3-container">
-      <div class="w3-bar">
-    By failing to prepare, you are preparing to fail. - BENJAMIN FRANKLIN
+          <a class="light-link" href="http://www.math.upenn.edu/">Department of Mathematics</a><br>
+          <a class="light-link" href="http://www.upenn.edu/">University of Pennsylvania</a><br>
+          <a class="light-link" href="https://en.wikipedia.org/wiki/David_Rittenhouse_Laboratory">David Rittenhouse Lab</a><br>
+          209 South 33rd Street<br>
+          Philadelphia, PA 19104-6395<br>
+          <a class="light-link" href="tel:12158984828"><i class="fa fa-phone">&nbsp;</i>(215) 898-4828</a><br>
+          Office: DRL 3E5<br>
+          <a class="light-link js-email" data-u="strain" data-d="math.upenn.edu" title="Messages"><i class="fa fa-envelope-o">&nbsp;</i></a>
+        </p>
+        <p class="footer-logo"><a href="https://www.sas.upenn.edu"><img src="images/SAS_logo_white.png" alt="Penn Arts &amp; Sciences" style="width:100%;max-width:250px"></a></p>
+      </div>
     </div>
-    </div>
-
+  </div>
 </footer>
 
-
-
-
-<!-- Footer -->
-<footer class="w3-container w3-theme-d3 w3-padding-64 w3-center w3-hide-medium w3-hide-large">
-
-    <!-- Grid that keeps the footer in the middle of the page -->
-    <div class="w3-content" id="footer">
-
-    <div class="w3-container">
-      <div class="w3-col m8" align="left">
-            <h3 class="block-title">Penn Mathematics Seminars</h3>
-              <ul>
-            <li style="list-style: none;"><a class="light-link" href="https://www.math.upenn.edu/events/">Events</a></li>
-             <li style="list-style: none;"><a class="light-link" href="https://www.math.upenn.edu/calendar/">Calendar</a></li>
-             <li style="list-style: none;"><a class="light-link" href="https://www.math.upenn.edu/events/seminars/partial-differential-equations-seminar">PDE</a></li>
-             <li style="list-style: none;"><a class="light-link" href="https://www.math.upenn.edu/events/seminars/penn-mathematics-colloquium">Colloquium</a></li>
-      </ul>
-        <br>
-            <h3 class="block-title">Penn Library VPN Proxy Links</h3>
-             <ul>
-             <li style="list-style: none;"><a class="light-link" href="http://www.library.upenn.edu/proxy" title="">Penn&#039;s Library via Proxy</a></li>
-             <li style="list-style: none;"><a class="light-link" href="http://hdl.library.upenn.edu/1017/6975" title="">MathSciNet via Proxy</a></li>
-             <li style="list-style: none;"><a class="light-link" href="https://mathscinet.ams.org/mathscinet/" title="">MathSciNet</a></li>
-             <li style="list-style: none;"><a class="light-link" href="https://proxy.library.upenn.edu/login?&url=https://zbmath.org" title="">Zentralblatt via Proxy</a></li>
-             <li style="list-style: none;"><a class="light-link" href="https://zbmath.org" title="">Zentralblatt</a></li>
-             </ul>
-          </div>
-
-      <div class="w3-col m4" align="left">
-        <h3 class="block-title">Contact Information</h3>
-        <p>
-          &nbsp;  &nbsp; <a class="light-link" href="http://www.math.upenn.edu/">Department of Mathematics</a><br>
-          &nbsp;  &nbsp; <a class="light-link" href="http://www.upenn.edu/">University of Pennsylvania</a><br>
-          &nbsp;  &nbsp; <a class="light-link" href="https://en.wikipedia.org/wiki/David_Rittenhouse_Laboratory">David Rittenhouse Lab</a><br>
-          &nbsp;  &nbsp; 209 South 33rd Street <br>
-          &nbsp;  &nbsp; Philadelphia, PA 19104-6395 <br>
-          &nbsp;  &nbsp;  <a class="light-link" href="tel:12158984828"><i class="fa fa-phone">&nbsp;</i>(215) 898-4828</a><br>
-          &nbsp;  &nbsp; Office: DRL 3E5<br>
-          &nbsp;  &nbsp; <script language="" type="text/javascript">
-          <!--
-          emailE=('strain' + '@' + 'math.upenn' + '.edu')
-          document.write('<a class="light-link" title="Messages" href="mailto:' + emailE + '"><i class="fa fa-envelope-o">&nbsp;</i>' +  emailE + '</a>')
-
-           //-->
-          </script>
-        <br><br><br>
-        <a href="https://www.sas.upenn.edu">
-        <img src="images/SAS_logo_white.png" alt="PennSAS-Logo" style="width:100%;max-width:250px">
-      </a>
-  </div>
-
-
-
-  </div>
-  </div>
-  <br>
-
-  <div class="w3-container">
-      <div class="w3-bar">
-    By failing to prepare, you are preparing to fail. - BENJAMIN FRANKLIN
-    </div>
-    </div>
-
-</footer>
-
-
-
-
-
-
+<script src="site.js"></script>
 </body>
 </html>
